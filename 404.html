@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodexFall - Redirecting...</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA Redirect Script
+      // This script will capture the path a user was trying to access and redirect them to index.html with a 'p' parameter.
+      var pathSegmentsToKeep = 1; // Since our base is /CodexFall/, we keep 1 segment
+
+      var l = window.location;
+      var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=' +
+        l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash;
+
+      l.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+    <!-- Redirecting... -->
+  </body>
+</html>
