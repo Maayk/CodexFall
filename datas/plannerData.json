@@ -1,0 +1,3798 @@
+{
+    "attributes": [
+        {
+            "id": "strength",
+            "max": 100,
+            "bonuses": [
+                {
+                    "stat": "Physical AP",
+                    "multiplier": 4
+                }
+            ]
+        },
+        {
+            "id": "defense",
+            "max": 100,
+            "bonuses": [
+                {
+                    "stat": "Physical DP",
+                    "multiplier": 8
+                }
+            ]
+        },
+        {
+            "id": "constitution",
+            "max": 100,
+            "bonuses": [
+                {
+                    "stat": "HP",
+                    "multiplier": 75
+                },
+                {
+                    "stat": "HP Regen",
+                    "multiplier": 1
+                }
+            ]
+        },
+        {
+            "id": "intelligence",
+            "max": 100,
+            "bonuses": [
+                {
+                    "stat": "Magic AP",
+                    "multiplier": 4
+                }
+            ]
+        },
+        {
+            "id": "resistance",
+            "max": 100,
+            "bonuses": [
+                {
+                    "stat": "Magic DP",
+                    "multiplier": 8
+                }
+            ]
+        },
+        {
+            "id": "mental",
+            "max": 100,
+            "bonuses": [
+                {
+                    "stat": "MP",
+                    "multiplier": 50
+                },
+                {
+                    "stat": "MP Regen",
+                    "multiplier": 1
+                }
+            ]
+        }
+    ],
+    "classes": [
+        {
+            "id": "Sword & Shield",
+            "labelKey": "swordShield",
+            "name": "planner.class.names.swordShield",
+            "iconName": "Shield",
+            "subclasses": [
+                {
+                    "id": "Iron-Warden",
+                    "name": "planner.subclasses.ironWarden.name",
+                    "labelKey": "ironWarden",
+                    "passive": {
+                        "name": "planner.subclasses.ironWarden.passive.name",
+                        "description": "planner.subclasses.ironWarden.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "reckoning",
+                            "number": 1,
+                            "name": "planner.skills.reckoning.name",
+                            "baseCooldown": 9,
+                            "baseManaCost": 36,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG x3",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 6
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.reckoning.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "ricochet_shield",
+                            "number": 3,
+                            "name": "planner.skills.ricochet_shield.name",
+                            "baseCooldown": 9,
+                            "baseManaCost": 41,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 9
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.ricochet_shield.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "relentless_charge",
+                            "number": 4,
+                            "name": "planner.skills.relentless_charge.name",
+                            "baseCooldown": 19,
+                            "baseManaCost": 36,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "170% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.relentless_charge.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "rampart",
+                            "number": 7,
+                            "name": "planner.skills.rampart.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "+{def}% DEF/lvl",
+                                    "params": {
+                                        "def": {
+                                            "base": 0,
+                                            "scaling": 0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.rampart.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "rallying_cry",
+                            "number": 8,
+                            "name": "planner.skills.rallying_cry.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 86,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "170% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.rallying_cry.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "unending_vow",
+                            "number": 11,
+                            "name": "planner.skills.unending_vow.name",
+                            "baseCooldown": 125,
+                            "baseManaCost": 136,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.unending_vow.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Vanguard",
+                    "name": "planner.subclasses.vanguard.name",
+                    "labelKey": "vanguard",
+                    "passive": {
+                        "name": "planner.subclasses.vanguard.passive.name",
+                        "description": "planner.subclasses.vanguard.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "shield_bash",
+                            "number": 2,
+                            "name": "planner.skills.shield_bash.name",
+                            "baseCooldown": 8,
+                            "baseManaCost": 41,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 120,
+                                            "scaling": 10
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.shield_bash.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "heroic_drop",
+                            "number": 5,
+                            "name": "planner.skills.heroic_drop.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 36,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 9
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 20,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.heroic_drop.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "dread_chain",
+                            "number": 6,
+                            "name": "planner.skills.dread_chain.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 41,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "250% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 90,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 1.5,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 15,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 5,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.dread_chain.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "valiant_slash",
+                            "number": 9,
+                            "name": "planner.skills.valiant_slash.name",
+                            "baseCooldown": 5,
+                            "baseManaCost": 46,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 10
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.valiant_slash.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "solidarity",
+                            "number": 10,
+                            "name": "planner.skills.solidarity.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 75,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{def}% DEF/lvl",
+                                    "params": {
+                                        "def": {
+                                            "base": 4,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 100,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.solidarity.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "break_the_line",
+                            "number": 12,
+                            "name": "planner.skills.break_the_line.name",
+                            "baseCooldown": 75,
+                            "baseManaCost": 141,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 25
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.break_the_line.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Two-Handed Sword",
+            "labelKey": "twoHandedSword",
+            "name": "planner.class.names.twoHandedSword",
+            "iconName": "Sword",
+            "subclasses": [
+                {
+                    "id": "Hellknight",
+                    "name": "planner.subclasses.hellknight.name",
+                    "labelKey": "hellknight",
+                    "passive": {
+                        "name": "planner.subclasses.hellknight.passive.name",
+                        "description": "planner.subclasses.hellknight.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "cyclone_slash",
+                            "number": 1,
+                            "name": "planner.skills.cyclone_slash.name",
+                            "baseCooldown": 16,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "300% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.cyclone_slash.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "doomfall",
+                            "number": 3,
+                            "name": "planner.skills.doomfall.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 65,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG x3"
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.doomfall.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "hellbringer",
+                            "number": 4,
+                            "name": "planner.skills.hellbringer.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG"
+                                },
+                                {
+                                    "template": "planner.effects.knockdown"
+                                }
+                            ],
+                            "description": "planner.skills.hellbringer.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "frenzy",
+                            "number": 7,
+                            "name": "planner.skills.frenzy.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 49,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG",
+                                    "params": {
+                                        "buff": {
+                                            "base": 0,
+                                            "scaling": 0.8
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 20,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 0,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.frenzy.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "fury_impact",
+                            "number": 8,
+                            "name": "planner.skills.fury_impact.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 70,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "160% Phys DMG"
+                                },
+                                {
+                                    "template": "planner.effects.burn",
+                                    "params": {
+                                        "amount": {
+                                            "base": 2.5,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.fury_impact.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "last_stand",
+                            "number": 11,
+                            "name": "planner.skills.last_stand.name",
+                            "baseCooldown": 80,
+                            "baseManaCost": 156,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 25
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.pull"
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 0.5,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.last_stand.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Duelist",
+                    "name": "planner.subclasses.duelist.name",
+                    "labelKey": "duelist",
+                    "passive": {
+                        "name": "planner.subclasses.duelist.passive.name",
+                        "description": "planner.subclasses.duelist.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "razor_echo",
+                            "number": 2,
+                            "name": "planner.skills.razor_echo.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 54,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "220% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.razor_echo.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "sword_dance",
+                            "number": 5,
+                            "name": "planner.skills.sword_dance.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 54,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "130% Phys DMG x3 | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.sword_dance.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "retaliation",
+                            "number": 6,
+                            "name": "planner.skills.retaliation.name",
+                            "baseCooldown": 17,
+                            "baseManaCost": 48,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "+{buff}% Buff/lvl",
+                                    "params": {
+                                        "buff": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.retaliation.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "light_burst",
+                            "number": 9,
+                            "name": "planner.skills.light_burst.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
+                                            "scaling": 6
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.light_burst.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "brave_dash",
+                            "number": 10,
+                            "name": "planner.skills.brave_dash.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 65,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 200,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.brave_dash.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "final_verdict",
+                            "number": 12,
+                            "name": "planner.skills.final_verdict.name",
+                            "baseCooldown": 75,
+                            "baseManaCost": 136,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 25
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.execute",
+                                    "params": {
+                                        "hp": {
+                                            "base": 20,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.final_verdict.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Spear",
+            "labelKey": "spear",
+            "name": "planner.class.names.spear",
+            "iconName": "Swords",
+            "subclasses": [
+                {
+                    "id": "Lance Master",
+                    "name": "planner.subclasses.lanceMaster.name",
+                    "labelKey": "lanceMaster",
+                    "passive": {
+                        "name": "planner.subclasses.lanceMaster.passive.name",
+                        "description": "planner.subclasses.lanceMaster.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "rule",
+                            "number": 1,
+                            "name": "planner.skills.rule.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 45,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 6
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 90,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 7.5,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 4,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.rule.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "spearfall",
+                            "number": 3,
+                            "name": "planner.skills.spearfall.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 45,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 6
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.spearfall.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "mirage",
+                            "number": 4,
+                            "name": "planner.skills.mirage.name",
+                            "baseCooldown": 17,
+                            "baseManaCost": 55,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.mirage.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "aerial_onslaught",
+                            "number": 7,
+                            "name": "planner.skills.aerial_onslaught.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 8
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.ignoreArmor",
+                                    "params": {
+                                        "amount": {
+                                            "base": 10,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.aerial_onslaught.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "face_off",
+                            "number": 8,
+                            "name": "planner.skills.face_off.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 53,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 6
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 200,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.face_off.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "dragons_fury",
+                            "number": 11,
+                            "name": "planner.skills.dragons_fury.name",
+                            "baseCooldown": 85,
+                            "baseManaCost": 156,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 300,
+                                            "scaling": 20
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.ignoreArmor",
+                                    "params": {
+                                        "amount": {
+                                            "base": 25,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.dragons_fury.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Legionnaire",
+                    "name": "planner.subclasses.legionnaire.name",
+                    "labelKey": "legionnaire",
+                    "passive": {
+                        "name": "planner.subclasses.legionnaire.passive.name",
+                        "description": "planner.subclasses.legionnaire.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "spear_shot",
+                            "number": 2,
+                            "name": "planner.skills.spear_shot.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 55,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 90,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.spear_shot.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "no_quarter",
+                            "number": 5,
+                            "name": "planner.skills.no_quarter.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 65,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "190% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.knockdown"
+                                }
+                            ],
+                            "description": "planner.skills.no_quarter.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "ruthless_dive",
+                            "number": 6,
+                            "name": "planner.skills.ruthless_dive.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 62,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "190% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.ruthless_dive.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "supreme_force",
+                            "number": 9,
+                            "name": "planner.skills.supreme_force.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 72,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "190% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.supreme_force.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "lance_cyclone",
+                            "number": 10,
+                            "name": "planner.skills.lance_cyclone.name",
+                            "baseCooldown": 18,
+                            "baseManaCost": 72,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "190% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 0.4,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 0,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.pull"
+                                }
+                            ],
+                            "description": "planner.skills.lance_cyclone.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "pollice_verso",
+                            "number": 12,
+                            "name": "planner.skills.pollice_verso.name",
+                            "baseCooldown": 80,
+                            "baseManaCost": 163,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 300,
+                                            "scaling": 20
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.execute",
+                                    "params": {
+                                        "hp": {
+                                            "base": 15,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.pollice_verso.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Dual Axe",
+            "labelKey": "dualAxe",
+            "name": "planner.class.names.dualAxe",
+            "iconName": "Axe",
+            "subclasses": [
+                {
+                    "id": "Berserker",
+                    "name": "planner.subclasses.berserker.name",
+                    "labelKey": "berserker",
+                    "passive": {
+                        "name": "planner.subclasses.berserker.passive.name",
+                        "description": "planner.subclasses.berserker.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "axe_throw",
+                            "number": 1,
+                            "name": "planner.skills.axe_throw.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG"
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 10,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 5,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.axe_throw.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "berserk",
+                            "number": 3,
+                            "name": "planner.skills.berserk.name",
+                            "baseCooldown": 16,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.berserk.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "slaughter",
+                            "number": 4,
+                            "name": "planner.skills.slaughter.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 70,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG"
+                                }
+                            ],
+                            "description": "planner.skills.slaughter.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "battle_roar",
+                            "number": 7,
+                            "name": "planner.skills.battle_roar.name",
+                            "baseCooldown": 6,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "50% Phys DMG"
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 10,
+                                            "scaling": 1
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.battle_roar.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "rage_burst",
+                            "number": 8,
+                            "name": "planner.skills.rage_burst.name",
+                            "baseCooldown": 6,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG"
+                                }
+                            ],
+                            "description": "planner.skills.rage_burst.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "execution",
+                            "number": 11,
+                            "name": "planner.skills.execution.name",
+                            "baseCooldown": 75,
+                            "baseManaCost": 172,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.execution.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Savage",
+                    "name": "planner.subclasses.savage.name",
+                    "labelKey": "savage",
+                    "passive": {
+                        "name": "planner.subclasses.savage.passive.name",
+                        "description": "planner.subclasses.savage.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "savage_cleave",
+                            "number": 2,
+                            "name": "planner.skills.savage_cleave.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "90% Phys DMG"
+                                }
+                            ],
+                            "description": "planner.skills.savage_cleave.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "guillotine",
+                            "number": 5,
+                            "name": "planner.skills.guillotine.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 80,
+                                            "scaling": 8
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.guillotine.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "rift_maker",
+                            "number": 6,
+                            "name": "planner.skills.rift_maker.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "190% Phys DMG"
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 50,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.rift_maker.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "deathroll",
+                            "number": 9,
+                            "name": "planner.skills.deathroll.name",
+                            "baseCooldown": 8,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG"
+                                }
+                            ],
+                            "description": "planner.skills.deathroll.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "cruel_authority",
+                            "number": 10,
+                            "name": "planner.skills.cruel_authority.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 90,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 110,
+                                            "scaling": 100
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 50,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.cruel_authority.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "apocalyptic_might",
+                            "number": 12,
+                            "name": "planner.skills.apocalyptic_might.name",
+                            "baseCooldown": 75,
+                            "baseManaCost": 158,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG"
+                                }
+                            ],
+                            "description": "planner.skills.apocalyptic_might.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Dual Dagger",
+            "labelKey": "dualDagger",
+            "name": "planner.class.names.dualDagger",
+            "iconName": "Dagger",
+            "subclasses": [
+                {
+                    "id": "Viper",
+                    "name": "planner.subclasses.viper.name",
+                    "labelKey": "viper",
+                    "passive": {
+                        "name": "planner.subclasses.viper.passive.name",
+                        "description": "planner.subclasses.viper.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "ambush",
+                            "number": 1,
+                            "name": "planner.skills.ambush.name",
+                            "baseCooldown": 27,
+                            "baseManaCost": 61,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.ambush.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "razor_spin",
+                            "number": 3,
+                            "name": "planner.skills.razor_spin.name",
+                            "baseCooldown": 9,
+                            "baseManaCost": 48,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 250,
+                                            "scaling": 11
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.razor_spin.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "poison_shroud",
+                            "number": 4,
+                            "name": "planner.skills.poison_shroud.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.poison_shroud.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "thousand_cut",
+                            "number": 7,
+                            "name": "planner.skills.thousand_cut.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 260,
+                                            "scaling": 13
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.thousand_cut.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "venom_burst",
+                            "number": 8,
+                            "name": "planner.skills.venom_burst.name",
+                            "baseCooldown": 9,
+                            "baseManaCost": 45,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 135,
+                                            "scaling": 6
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.venom_burst.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "assassination",
+                            "number": 11,
+                            "name": "planner.skills.assassination.name",
+                            "baseCooldown": 90,
+                            "baseManaCost": 150,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
+                                            "scaling": 8
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.assassination.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Bloodshade",
+                    "name": "planner.subclasses.bloodshade.name",
+                    "labelKey": "bloodshade",
+                    "passive": {
+                        "name": "planner.subclasses.bloodshade.passive.name",
+                        "description": "planner.subclasses.bloodshade.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "razor_shuriken",
+                            "number": 2,
+                            "name": "planner.skills.razor_shuriken.name",
+                            "baseCooldown": 7,
+                            "baseManaCost": 65,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 110,
+                                            "scaling": 5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.razor_shuriken.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "blindside",
+                            "number": 5,
+                            "name": "planner.skills.blindside.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.knockdown"
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 70,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.blindside.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "fade_to_black",
+                            "number": 6,
+                            "name": "planner.skills.fade_to_black.name",
+                            "baseCooldown": 18,
+                            "baseManaCost": 65,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "180% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.fade_to_black.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "death_bloom",
+                            "number": 9,
+                            "name": "planner.skills.death_bloom.name",
+                            "baseCooldown": 14,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "270% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.death_bloom.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "blood_harvest",
+                            "number": 10,
+                            "name": "planner.skills.blood_harvest.name",
+                            "baseCooldown": 16,
+                            "baseManaCost": 61,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "220% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.blood_harvest.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "death_waltz",
+                            "number": 12,
+                            "name": "planner.skills.death_waltz.name",
+                            "baseCooldown": 75,
+                            "baseManaCost": 156,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 280,
+                                            "scaling": 17
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.death_waltz.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "War Hammer",
+            "labelKey": "warHammer",
+            "name": "planner.class.names.warHammer",
+            "iconName": "Hammer",
+            "subclasses": [
+                {
+                    "id": "Demolisher",
+                    "name": "planner.subclasses.demolisher.name",
+                    "labelKey": "demolisher",
+                    "passive": {
+                        "name": "planner.subclasses.demolisher.passive.name",
+                        "description": "planner.subclasses.demolisher.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "stonewall",
+                            "number": 1,
+                            "name": "planner.skills.stonewall.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 90,
+                                            "scaling": 6
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.stonewall.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "seismic_charge",
+                            "number": 3,
+                            "name": "planner.skills.seismic_charge.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 90,
+                                            "scaling": 7
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.seismic_charge.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "iron_will",
+                            "number": 4,
+                            "name": "planner.skills.iron_will.name",
+                            "baseCooldown": 26,
+                            "baseManaCost": 68,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 100,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.iron_will.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "juggernaut",
+                            "number": 7,
+                            "name": "planner.skills.juggernaut.name",
+                            "baseCooldown": 8,
+                            "baseManaCost": 68,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 130,
+                                            "scaling": 7
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.juggernaut.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "homerun",
+                            "number": 8,
+                            "name": "planner.skills.homerun.name",
+                            "baseCooldown": 20,
+                            "baseManaCost": 83,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.homerun.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "stone_arena",
+                            "number": 11,
+                            "name": "planner.skills.stone_arena.name",
+                            "baseCooldown": 80,
+                            "baseManaCost": 165,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 15
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.stone_arena.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Brawler",
+                    "name": "planner.subclasses.brawler.name",
+                    "labelKey": "brawler",
+                    "passive": {
+                        "name": "planner.subclasses.brawler.passive.name",
+                        "description": "planner.subclasses.brawler.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "seismic_dive",
+                            "number": 2,
+                            "name": "planner.skills.seismic_dive.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 130,
+                                            "scaling": 7
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 90,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.seismic_dive.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "judgment",
+                            "number": 5,
+                            "name": "planner.skills.judgment.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 130,
+                                            "scaling": 7
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.judgment.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "steel_vortex",
+                            "number": 6,
+                            "name": "planner.skills.steel_vortex.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 54,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 10,
+                                            "scaling": 10
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.steel_vortex.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "grasp",
+                            "number": 9,
+                            "name": "planner.skills.grasp.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 70,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow40s3s"
+                                }
+                            ],
+                            "description": "planner.skills.grasp.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "unyielding",
+                            "number": 10,
+                            "name": "planner.skills.unyielding.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 74,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 15,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.unyielding.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "earth_shatter",
+                            "number": 12,
+                            "name": "planner.skills.earth_shatter.name",
+                            "baseCooldown": 80,
+                            "baseManaCost": 170,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 8
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.earth_shatter.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Bow",
+            "labelKey": "bow",
+            "name": "planner.class.names.bow",
+            "iconName": "Bow",
+            "subclasses": [
+                {
+                    "id": "Sharpshooter",
+                    "name": "planner.subclasses.sharpshooter.name",
+                    "labelKey": "sharpshooter",
+                    "passive": {
+                        "name": "planner.subclasses.sharpshooter.passive.name",
+                        "description": "planner.subclasses.sharpshooter.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "piercing_arrow",
+                            "number": 1,
+                            "name": "planner.skills.piercing_arrow.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 190,
+                                            "scaling": 7
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.piercing_arrow.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "skyfall_shot",
+                            "number": 3,
+                            "name": "planner.skills.skyfall_shot.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 180,
+                                            "scaling": 9
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.skyfall_shot.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "quick_draw",
+                            "number": 4,
+                            "name": "planner.skills.quick_draw.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 57,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG x5",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 60,
+                                            "scaling": 5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.quick_draw.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "evasive_shot",
+                            "number": 7,
+                            "name": "planner.skills.evasive_shot.name",
+                            "baseCooldown": 16,
+                            "baseManaCost": 70,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.evasive_shot.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "chaining_roots",
+                            "number": 8,
+                            "name": "planner.skills.chaining_roots.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 62,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 8
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 95,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.chaining_roots.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "dragons_wrath",
+                            "number": 11,
+                            "name": "planner.skills.dragons_wrath.name",
+                            "baseCooldown": 70,
+                            "baseManaCost": 150,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 30
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.knockdown"
+                                }
+                            ],
+                            "description": "planner.skills.dragons_wrath.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Archer",
+                    "name": "planner.subclasses.archer.name",
+                    "labelKey": "archer",
+                    "passive": {
+                        "name": "planner.subclasses.archer.passive.name",
+                        "description": "planner.subclasses.archer.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "dual_barrage",
+                            "number": 2,
+                            "name": "planner.skills.dual_barrage.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 57,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG x5",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 50,
+                                            "scaling": 5
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 35,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.dual_barrage.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "breakaway",
+                            "number": 5,
+                            "name": "planner.skills.breakaway.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 48,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.breakaway.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "skyshot",
+                            "number": 6,
+                            "name": "planner.skills.skyshot.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 62,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
+                                            "scaling": 6
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.skyshot.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "arsenal",
+                            "number": 9,
+                            "name": "planner.skills.arsenal.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG x5",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 15
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.arsenal.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "singularity_shot",
+                            "number": 10,
+                            "name": "planner.skills.singularity_shot.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 62,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "200% Phys DMG"
+                                },
+                                {
+                                    "template": "planner.effects.slow40s3s"
+                                }
+                            ],
+                            "description": "planner.skills.singularity_shot.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "arrow_rain",
+                            "number": 12,
+                            "name": "planner.skills.arrow_rain.name",
+                            "baseCooldown": 70,
+                            "baseManaCost": 156,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 250,
+                                            "scaling": 14
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 70,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 5,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.arrow_rain.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Dual Crossbow",
+            "labelKey": "dualCrossbow",
+            "name": "planner.class.names.dualCrossbow",
+            "iconName": "Crosshair",
+            "subclasses": [
+                {
+                    "id": "Hunter",
+                    "name": "planner.subclasses.hunter.name",
+                    "labelKey": "hunter",
+                    "passive": {
+                        "name": "planner.subclasses.hunter.passive.name",
+                        "description": "planner.subclasses.hunter.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "overkill",
+                            "number": 1,
+                            "name": "planner.skills.overkill.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 68,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 15,
+                                            "scaling": 0.5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.overkill.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "multi_shot",
+                            "number": 3,
+                            "name": "planner.skills.multi_shot.name",
+                            "baseCooldown": 11,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 60,
+                                            "scaling": 2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.multi_shot.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "quick_step",
+                            "number": 4,
+                            "name": "planner.skills.quick_step.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 56,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.quick_step.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "bolt_hail",
+                            "number": 7,
+                            "name": "planner.skills.bolt_hail.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 70,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 160,
+                                            "scaling": 8
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.bolt_hail.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "cleanse",
+                            "number": 8,
+                            "name": "planner.skills.cleanse.name",
+                            "baseCooldown": 19,
+                            "baseManaCost": 72,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.cleanse.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "doom_barrage",
+                            "number": 11,
+                            "name": "planner.skills.doom_barrage.name",
+                            "baseCooldown": 70,
+                            "baseManaCost": 143,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 25
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.doom_barrage.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Marksman",
+                    "name": "planner.subclasses.marksman.name",
+                    "labelKey": "marksman",
+                    "passive": {
+                        "name": "planner.subclasses.marksman.passive.name",
+                        "description": "planner.subclasses.marksman.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "explosive_arrow",
+                            "number": 2,
+                            "name": "planner.skills.explosive_arrow.name",
+                            "baseCooldown": 10,
+                            "baseManaCost": 54,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 190,
+                                            "scaling": 7
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.explosive_arrow.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "ballista",
+                            "number": 5,
+                            "name": "planner.skills.ballista.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 54,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 250,
+                                            "scaling": 14
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.ballista.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "stun_bomb",
+                            "number": 6,
+                            "name": "planner.skills.stun_bomb.name",
+                            "baseCooldown": 12,
+                            "baseManaCost": 68,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 6
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.stun_bomb.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "steel_trap",
+                            "number": 9,
+                            "name": "planner.skills.steel_trap.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 50,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "150% Phys DMG"
+                                }
+                            ],
+                            "description": "planner.skills.steel_trap.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "prowl_step",
+                            "number": 10,
+                            "name": "planner.skills.prowl_step.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 68,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.prowl_step.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "hunt_thrill",
+                            "number": 12,
+                            "name": "planner.skills.hunt_thrill.name",
+                            "baseCooldown": 100,
+                            "baseManaCost": 156,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.hunt_thrill.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Arcane Staff",
+            "labelKey": "arcaneStaff",
+            "name": "planner.class.names.arcaneStaff",
+            "iconName": "Wand",
+            "subclasses": [
+                {
+                    "id": "Elementalist",
+                    "name": "planner.subclasses.elementalist.name",
+                    "labelKey": "elementalist",
+                    "passive": {
+                        "name": "planner.subclasses.elementalist.passive.name",
+                        "description": "planner.subclasses.elementalist.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "tornado",
+                            "number": 1,
+                            "name": "planner.skills.tornado.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 60,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 8
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 70,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.tornado.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "meteor",
+                            "number": 3,
+                            "name": "planner.skills.meteor.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 52,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 14
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.stun",
+                                    "params": {
+                                        "duration": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.burn",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.meteor.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "ice_cage",
+                            "number": 4,
+                            "name": "planner.skills.ice_cage.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 60,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 9
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.freeze",
+                                    "params": {
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.ice_cage.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "thunderstrike",
+                            "number": 7,
+                            "name": "planner.skills.thunderstrike.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 88,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 180,
+                                            "scaling": 10
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.thunderstrike.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "earths_wake",
+                            "number": 8,
+                            "name": "planner.skills.earths_wake.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 85,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG x3",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 140,
+                                            "scaling": 7
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 20,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.earths_wake.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "elemental_dash",
+                            "number": 11,
+                            "name": "planner.skills.elemental_dash.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 85,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 40,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.elemental_dash.description",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Necromancer",
+                    "name": "planner.subclasses.necromancer.name",
+                    "labelKey": "necromancer",
+                    "passive": {
+                        "name": "planner.subclasses.necromancer.passive.name",
+                        "description": "planner.subclasses.necromancer.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "maw_of_hell",
+                            "number": 2,
+                            "name": "planner.skills.maw_of_hell.name",
+                            "baseCooldown": 15,
+                            "baseManaCost": 52,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 8
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.knockdown"
+                                }
+                            ],
+                            "description": "planner.skills.maw_of_hell.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "grave_legion",
+                            "number": 5,
+                            "name": "planner.skills.grave_legion.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
+                                            "scaling": 16
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.grave_legion.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "necro_herd",
+                            "number": 6,
+                            "name": "planner.skills.necro_herd.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 83,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 160,
+                                            "scaling": 15
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "planner.skills.necro_herd.description",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "agony_wall",
+                            "number": 9,
+                            "name": "planner.skills.agony_wall.name",
+                            "baseCooldown": 13,
+                            "baseManaCost": 83,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 50,
+                                            "scaling": 5
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "inferno_trick",
+                            "number": 10,
+                            "name": "Inferno Trick",
+                            "baseCooldown": 12,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
+                                            "scaling": 9
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 50,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "revenants_vengeance",
+                            "number": 12,
+                            "name": "Revenant's Vengeance",
+                            "baseCooldown": 15,
+                            "baseManaCost": 83,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 7
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Life Staff",
+            "labelKey": "lifeStaff",
+            "name": "planner.class.names.lifeStaff",
+            "iconName": "Heart",
+            "subclasses": [
+                {
+                    "id": "Spirit Wanderer",
+                    "name": "planner.subclasses.spiritWanderer.name",
+                    "labelKey": "spiritWanderer",
+                    "passive": {
+                        "name": "planner.subclasses.spiritWanderer.passive.name",
+                        "description": "planner.subclasses.spiritWanderer.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "redemption",
+                            "number": 1,
+                            "name": "Redemption",
+                            "baseCooldown": 25,
+                            "baseManaCost": 61,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "mana_tide",
+                            "number": 3,
+                            "name": "Mana Tide",
+                            "baseCooldown": 15,
+                            "baseManaCost": 59,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 120,
+                                            "scaling": 5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "soul_beacon",
+                            "number": 4,
+                            "name": "Soul Beacon",
+                            "baseCooldown": 15,
+                            "baseManaCost": 61,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 1
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "soul_cascade",
+                            "number": 7,
+                            "name": "Soul Cascade",
+                            "baseCooldown": 6.5,
+                            "baseManaCost": 112,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 1
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "realm_shift",
+                            "number": 8,
+                            "name": "Realm Shift",
+                            "baseCooldown": 18,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "planner.effects.heal",
+                                    "params": {
+                                        "amount": {
+                                            "base": 1,
+                                            "scaling": 1
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "divine_intervention",
+                            "number": 11,
+                            "name": "Divine Intervention",
+                            "baseCooldown": 90,
+                            "baseManaCost": 189,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "planner.effects.stun1_5s_lvl"
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                },
+                {
+                    "id": "Luminary",
+                    "name": "planner.subclasses.luminary.name",
+                    "labelKey": "luminary",
+                    "passive": {
+                        "name": "planner.subclasses.luminary.passive.name",
+                        "description": "planner.subclasses.luminary.passive.description"
+                    },
+                    "skills": [
+                        {
+                            "id": "divine_beam",
+                            "number": 2,
+                            "name": "Divine Beam",
+                            "baseCooldown": 6,
+                            "baseManaCost": 40,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "dual_surge",
+                            "number": 5,
+                            "name": "Dual Surge",
+                            "baseCooldown": 14,
+                            "baseManaCost": 63,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "{dmg}% Magic DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 70,
+                                            "scaling": 3
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "divine_rush",
+                            "number": 6,
+                            "name": "Divine Rush",
+                            "baseCooldown": 15,
+                            "baseManaCost": 76,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "80% Magic DMG | CD {cd}s",
+                                    "params": {
+                                        "cd": {
+                                            "base": 0,
+                                            "scaling": -0.2
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "sacred_instinct",
+                            "number": 9,
+                            "name": "Sacred Instinct",
+                            "baseCooldown": 17,
+                            "baseManaCost": 112,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "planner.effects.shield",
+                                    "params": {
+                                        "amount": {
+                                            "base": 0,
+                                            "scaling": 4
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "radiant_halo",
+                            "number": 10,
+                            "name": "Radiant Halo",
+                            "baseCooldown": 16,
+                            "baseManaCost": 95,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "planner.effects.shield_lvl",
+                                    "params": {
+                                        "amount": {
+                                            "base": 70,
+                                            "scaling": 0
+                                        },
+                                        "scaling": {
+                                            "base": 4,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.slow",
+                                    "params": {
+                                        "amount": {
+                                            "base": 30,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 2,
+                                            "scaling": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        },
+                        {
+                            "id": "heavenly_blessing",
+                            "number": 12,
+                            "name": "Heavenly Blessing",
+                            "baseCooldown": 100,
+                            "baseManaCost": 196,
+                            "maxLevel": 25,
+                            "upgradeCostType": "Common",
+                            "upgradeCostAmount": 1,
+                            "effects": [
+                                {
+                                    "template": "Heal {heal}%",
+                                    "params": {
+                                        "heal": {
+                                            "base": 30,
+                                            "scaling": 0.5
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "",
+                            "hasStoneSlot": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "equipmentSlots": [
+        {
+            "id": "head",
+            "iconFallback": "/assets/helmet.png",
+            "positionClass": "gear-slot--pos-1"
+        },
+        {
+            "id": "chest",
+            "iconFallback": "/assets/armor.png",
+            "positionClass": "gear-slot--pos-2"
+        },
+        {
+            "id": "gloves",
+            "iconFallback": "/assets/gloves.png",
+            "positionClass": "gear-slot--pos-3"
+        },
+        {
+            "id": "earring1",
+            "iconFallback": "/assets/earring.png",
+            "positionClass": "gear-slot--pos-4"
+        },
+        {
+            "id": "ring1",
+            "iconFallback": "/assets/ring.png",
+            "positionClass": "gear-slot--pos-5"
+        },
+        {
+            "id": "necklace",
+            "iconFallback": "/assets/necklace.png",
+            "positionClass": "gear-slot--pos-6"
+        },
+        {
+            "id": "ring2",
+            "iconFallback": "/assets/ring.png",
+            "positionClass": "gear-slot--pos-7"
+        },
+        {
+            "id": "earring2",
+            "iconFallback": "/assets/earring.png",
+            "positionClass": "gear-slot--pos-8"
+        },
+        {
+            "id": "bracelet",
+            "iconFallback": "/assets/bracelet.png",
+            "positionClass": "gear-slot--pos-9"
+        },
+        {
+            "id": "boots",
+            "iconFallback": "/assets/boots.png",
+            "positionClass": "gear-slot--pos-10"
+        },
+        {
+            "id": "card1",
+            "iconFallback": "/assets/card.png",
+            "positionClass": "gear-slot--inner-1"
+        },
+        {
+            "id": "weapon",
+            "iconFallback": "/assets/weapon.png",
+            "positionClass": "gear-slot--inner-2"
+        },
+        {
+            "id": "card2",
+            "iconFallback": "/assets/card.png",
+            "positionClass": "gear-slot--inner-3"
+        },
+        {
+            "id": "offhand",
+            "iconFallback": "/assets/weapon.png",
+            "positionClass": "gear-slot--inner-4",
+            "allowedClasses": [
+                "Sword & Shield"
+            ]
+        }
+    ],
+    "statKeys": [
+        {
+            "key": "accuracy",
+            "label": "Accuracy"
+        },
+        {
+            "key": "atk_speed",
+            "label": "Attack Speed"
+        },
+        {
+            "key": "evasion",
+            "label": "Evasion"
+        },
+        {
+            "key": "hp",
+            "label": "HP"
+        },
+        {
+            "key": "hp_regen",
+            "label": "HP Regen"
+        },
+        {
+            "key": "magic_ap",
+            "label": "Magic AP"
+        },
+        {
+            "key": "magic_dp",
+            "label": "Magic DP"
+        },
+        {
+            "key": "mp",
+            "label": "MP"
+        },
+        {
+            "key": "mp_regen",
+            "label": "MP Regen"
+        },
+        {
+            "key": "physical_ap",
+            "label": "Physical AP"
+        },
+        {
+            "key": "physical_dp",
+            "label": "Physical DP"
+        },
+        {
+            "key": "speed",
+            "label": "Movement Speed"
+        },
+        {
+            "key": "casting_speed",
+            "label": "Casting Speed"
+        },
+        {
+            "key": "extra_damage_mob",
+            "label": "Mob Bonus Damage"
+        },
+        {
+            "key": "extra_damage_boss",
+            "label": "Boss Bonus Damage"
+        }
+    ]
+}
