@@ -1,4 +1,44 @@
 {
+    "config": {
+        "maxAttributePoints": 600,
+        "maxAttributePerAttr": 100,
+        "maxUpgradeLevel": 15,
+        "maxSkillLevel": 25,
+        "maxGrade": 320,
+        "rarityThresholds": {
+            "uncommon": 1,
+            "rare": 10,
+            "epic": 19
+        },
+        "gearscoreExcludedSlots": ["card1", "card2"],
+        "gradeSliderTicks": [0, 80, 160, 240, 320]
+    },
+    "rarityColors": {
+        "1": {
+            "hex": "#e6edf3",
+            "rgba": "rgba(230, 237, 243, 1)"
+        },
+        "2": {
+            "hex": "#56B65C",
+            "rgba": "rgba(86, 182, 92, 1)"
+        },
+        "3": {
+            "hex": "#4F8EFF",
+            "rgba": "rgba(79, 142, 255, 1)"
+        },
+        "4": {
+            "hex": "#C572FF",
+            "rgba": "rgba(197, 114, 255, 1)"
+        },
+        "5": {
+            "hex": "#FFB347",
+            "rgba": "rgba(255, 179, 71, 1)"
+        },
+        "6": {
+            "hex": "#FFD700",
+            "rgba": "rgba(255, 215, 0, 1)"
+        }
+    },
     "attributes": [
         {
             "id": "strength",
@@ -3794,5 +3834,15 @@
             "key": "extra_damage_boss",
             "label": "Boss Bonus Damage"
         }
+    ],
+    "modifiableStats": [
+        "physical_ap",
+        "physical_dp",
+        "magic_ap",
+        "magic_dp",
+        "hp",
+        "mp",
+        "accuracy",
+        "evasion"
     ]
 }
