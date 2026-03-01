@@ -146,122 +146,24 @@
         }
     },
     "setBonuses": {
-        "uncommon": [
-            {
-                "set_name": "Sentinel's Guard",
-                "talisman": "Tempestbound",
-                "bonus_4": {
-                    "physical_dp": 82.5,
-                    "hp": 750
-                }
-            },
-            {
-                "set_name": "Lifeward",
-                "talisman": "Divine Harmony",
-                "bonus_4": {
-                    "hp_regen": 67.5,
-                    "mp_regen": 67.5
-                }
-            },
-            {
-                "set_name": "Ironwall Defender",
-                "talisman": "Fortress of Valor",
-                "bonus_4": {
-                    "mp_regen": 67.5,
-                    "evasion": 45
-                }
-            },
-            {
-                "set_name": "Dawnbringer",
-                "talisman": "Seraphic Grace",
-                "bonus_4": {
-                    "mp": 750,
-                    "heal_multiplier": 10
-                }
-            },
-            {
-                "set_name": "Shadowstrike",
-                "talisman": "Bladeweaver",
-                "bonus_4": {
-                    "physical_ap": 82.5,
-                    "hp": 750
-                }
-            },
-            {
-                "set_name": "Guardian's Resolve",
-                "talisman": "Sovereign's Legacy",
-                "bonus_4": {
-                    "physical_dp": 82.5,
-                    "hp": 750
-                }
-            },
-            {
-                "set_name": "Swiftstrike",
-                "talisman": "Dragonclaw",
-                "bonus_4": {
-                    "accuracy": 52.5,
-                    "critical_chance": 5
-                }
-            },
-            {
-                "set_name": "Sanctified Bastion",
-                "talisman": "Divine Aegis",
-                "bonus_4": {
-                    "hp": 750,
-                    "heal_multiplier": 10
-                }
-            },
-            {
-                "set_name": "Steelbreaker",
-                "talisman": "Ravager's Dominion",
-                "bonus_4": {
-                    "physical_ap": 82.5,
-                    "hp": 750
-                }
-            },
-            {
-                "set_name": "Mystic Ember",
-                "talisman": "Astral Conflux",
-                "bonus_4": {
-                    "magic_ap": 82.5,
-                    "mp": 750
-                }
-            },
-            {
-                "set_name": "Arcane Focus",
-                "talisman": "Eldritch Catalyst",
-                "bonus_4": {
-                    "mp_regen": 67.5,
-                    "critical_chance": 5
-                }
-            },
-            {
-                "set_name": "Arcane Wisp",
-                "talisman": "Spellfire",
-                "bonus_4": {
-                    "magic_ap": 82.5,
-                    "hp": 750
-                }
-            }
-        ],
         "rare": [
             {
                 "set_name": "Whispering Gale",
                 "talisman": "Tempestbound",
                 "bonus_3": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Serene Blessing",
                 "talisman": "Divine Harmony",
                 "bonus_3": {
-                    "hp_regen": 67.5,
-                    "mp_regen": 67.5
+                    "hp_regen": 90,
+                    "mp_regen": 90
                 },
                 "bonus_4": {
                     "heal_multiplier": 10
@@ -271,8 +173,8 @@
                 "set_name": "Stoneguard",
                 "talisman": "Fortress of Valor",
                 "bonus_3": {
-                    "mp_regen": 67.5,
-                    "evasion": 45
+                    "mp_regen": 90,
+                    "evasion": 60
                 },
                 "bonus_4": {
                     "speed": 4
@@ -282,8 +184,8 @@
                 "set_name": "Lifebender",
                 "talisman": "Seraphic Grace",
                 "bonus_3": {
-                    "hp": 750,
-                    "mp": 750
+                    "hp": 1000,
+                    "mp": 1000
                 },
                 "bonus_4": {
                     "heal_multiplier": 10
@@ -293,29 +195,29 @@
                 "set_name": "Bladewind",
                 "talisman": "Bladeweaver",
                 "bonus_3": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Warlord's Honor",
                 "talisman": "Sovereign's Legacy",
                 "bonus_3": {
-                    "physical_dp": 82.5,
-                    "magic_dp": 82.5
+                    "physical_dp": 110,
+                    "magic_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Savage Strike",
                 "talisman": "Dragonclaw",
                 "bonus_3": {
-                    "accuracy": 52.5,
+                    "accuracy": 70,
                     "critical_chance": 5
                 },
                 "bonus_4": {
@@ -326,8 +228,8 @@
                 "set_name": "Guardian of Light",
                 "talisman": "Divine Aegis",
                 "bonus_3": {
-                    "physical_dp": 82.5,
-                    "hp": 750
+                    "physical_dp": 110,
+                    "hp": 1000
                 },
                 "bonus_4": {
                     "heal_multiplier": 10
@@ -337,30 +239,30 @@
                 "set_name": "Ironclad Fury",
                 "talisman": "Ravager's Dominion",
                 "bonus_3": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Celestial Flame",
                 "talisman": "Astral Conflux",
                 "bonus_3": {
-                    "magic_ap": 82.5,
-                    "hp": 750
+                    "magic_ap": 110,
+                    "hp": 1000
                 },
                 "bonus_4": {
-                    "mp": 750
+                    "mp": 1000
                 }
             },
             {
                 "set_name": "Mystic Conduit",
                 "talisman": "Eldritch Catalyst",
                 "bonus_3": {
-                    "hp_regen": 67.5,
-                    "mp_regen": 67.5
+                    "hp_regen": 90,
+                    "mp_regen": 90
                 },
                 "bonus_4": {
                     "critical_chance": 5
@@ -370,38 +272,38 @@
                 "set_name": "Etherstorm",
                 "talisman": "Spellfire",
                 "bonus_3": {
-                    "magic_ap": 82.5,
-                    "physical_dp": 82.5
+                    "magic_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             }
         ],
         "legendary": [
             {
-                "set_name": "Tempesthound",
+                "set_name": "Tempestbound",
                 "talisman": "Tempestbound",
                 "bonus_2": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "magic_dp": 82.5
+                    "magic_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Divine Harmony",
                 "talisman": "Divine Harmony",
                 "bonus_2": {
-                    "hp_regen": 67.5,
-                    "mp_regen": 67.5
+                    "hp_regen": 90,
+                    "mp_regen": 90
                 },
                 "bonus_3": {
-                    "evasion": 45
+                    "evasion": 60
                 },
                 "bonus_4": {
                     "heal_multiplier": 10
@@ -411,11 +313,11 @@
                 "set_name": "Fortress of Valor",
                 "talisman": "Fortress of Valor",
                 "bonus_2": {
-                    "hp_regen": 67.5,
-                    "mp_regen": 67.5
+                    "hp_regen": 90,
+                    "mp_regen": 90
                 },
                 "bonus_3": {
-                    "evasion": 45
+                    "evasion": 60
                 },
                 "bonus_4": {
                     "speed": 4
@@ -425,11 +327,11 @@
                 "set_name": "Seraphic Grace",
                 "talisman": "Seraphic Grace",
                 "bonus_2": {
-                    "hp": 750,
-                    "physical_dp": 82.5
+                    "hp": 1000,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "mp": 750
+                    "mp": 1000
                 },
                 "bonus_4": {
                     "heal_multiplier": 10
@@ -439,36 +341,36 @@
                 "set_name": "Bladeweaver",
                 "talisman": "Bladeweaver",
                 "bonus_2": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "magic_dp": 82.5
+                    "magic_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Sovereign's Legacy",
                 "talisman": "Sovereign's Legacy",
                 "bonus_2": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "magic_dp": 82.5
+                    "magic_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Dragonclaw",
                 "talisman": "Dragonclaw",
                 "bonus_2": {
-                    "accuracy": 52.5,
-                    "hp_regen": 67.5
+                    "accuracy": 90,
+                    "hp_regen": 70
                 },
                 "bonus_3": {
                     "critical_chance": 5
@@ -481,11 +383,11 @@
                 "set_name": "Divine Aegis",
                 "talisman": "Divine Aegis",
                 "bonus_2": {
-                    "physical_dp": 82.5,
-                    "magic_dp": 82.5
+                    "physical_dp": 110,
+                    "magic_dp": 110
                 },
                 "bonus_3": {
-                    "hp": 750
+                    "hp": 1000
                 },
                 "bonus_4": {
                     "heal_multiplier": 10
@@ -495,36 +397,36 @@
                 "set_name": "Ravager's Dominion",
                 "talisman": "Ravager's Dominion",
                 "bonus_2": {
-                    "physical_ap": 82.5,
-                    "physical_dp": 82.5
+                    "physical_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "magic_dp": 82.5
+                    "magic_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             },
             {
                 "set_name": "Astral Conflux",
                 "talisman": "Astral Conflux",
                 "bonus_2": {
-                    "magic_ap": 82.5,
-                    "physical_dp": 82.5
+                    "magic_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "hp": 750
+                    "hp": 1000
                 },
                 "bonus_4": {
-                    "mp": 750
+                    "mp": 1000
                 }
             },
             {
                 "set_name": "Eldritch Catalyst",
                 "talisman": "Eldritch Catalyst",
                 "bonus_2": {
-                    "hp_regen": 67.5,
-                    "mp_regen": 67.5
+                    "hp_regen": 90,
+                    "mp_regen": 90
                 },
                 "bonus_3": {
                     "critical_chance": 5
@@ -537,14 +439,14 @@
                 "set_name": "Spellfire",
                 "talisman": "Spellfire",
                 "bonus_2": {
-                    "magic_ap": 82.5,
-                    "physical_dp": 82.5
+                    "magic_ap": 110,
+                    "physical_dp": 110
                 },
                 "bonus_3": {
-                    "magic_dp": 82.5
+                    "magic_dp": 110
                 },
                 "bonus_4": {
-                    "hp": 750
+                    "hp": 1000
                 }
             }
         ]
@@ -643,6 +545,64 @@
                     "multiplier": 1
                 }
             ]
+        }
+    ],
+    "clanPassives": [
+        {
+            "id": "health_boost",
+            "nameKey": "planner.clanPassives.health_boost",
+            "iconName": "Heart",
+            "effects": {
+                "hp": [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10
+                ]
+            }
+        },
+        {
+            "id": "defense_boost",
+            "nameKey": "planner.clanPassives.defense_boost",
+            "iconName": "Shield",
+            "effects": {
+                "physical_dp": [
+                    3,
+                    6,
+                    9,
+                    12,
+                    15
+                ],
+                "magic_dp": [
+                    3,
+                    6,
+                    9,
+                    12,
+                    15
+                ]
+            }
+        },
+        {
+            "id": "attack_boost",
+            "nameKey": "planner.clanPassives.attack_boost",
+            "iconName": "Swords",
+            "effects": {
+                "physical_ap": [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10
+                ],
+                "magic_ap": [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10
+                ]
+            }
         }
     ],
     "classes": [
