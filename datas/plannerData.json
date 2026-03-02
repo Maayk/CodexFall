@@ -45,6 +45,107 @@
             "15": 646
         }
     },
+    "weightClassBuffs": [
+        {
+            "id": "heavy",
+            "nameKey": "planner.weightClass.heavy",
+            "minWeight": 32,
+            "maxWeight": 40,
+            "color": "#e57373",
+            "bonuses": {
+                "physical_dp": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "magic_dp": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "hp": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "speed": {
+                    "type": "flat",
+                    "value": -15
+                },
+                "magic_ap": {
+                    "type": "percent",
+                    "value": -30
+                },
+                "mp": {
+                    "type": "percent",
+                    "value": -30
+                }
+            }
+        },
+        {
+            "id": "light",
+            "nameKey": "planner.weightClass.light",
+            "minWeight": 23,
+            "maxWeight": 31,
+            "color": "#64b5f6",
+            "bonuses": {
+                "physical_ap": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "critical_multiplier": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "accuracy": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "evasion": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "speed": {
+                    "type": "flat",
+                    "value": 5
+                },
+                "mp": {
+                    "type": "percent",
+                    "value": -10
+                }
+            }
+        },
+        {
+            "id": "robe",
+            "nameKey": "planner.weightClass.robe",
+            "minWeight": 16,
+            "maxWeight": 22,
+            "color": "#81c784",
+            "bonuses": {
+                "magic_ap": {
+                    "type": "percent",
+                    "value": 20
+                },
+                "mp": {
+                    "type": "percent",
+                    "value": 20
+                },
+                "speed": {
+                    "type": "flat",
+                    "value": 10
+                },
+                "evasion": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "critical_chance": {
+                    "type": "percent",
+                    "value": 10
+                },
+                "physical_dp": {
+                    "type": "percent",
+                    "value": -10
+                }
+            }
+        }
+    ],
     "cardStats": {
         "4001": {
             "hp": 3
