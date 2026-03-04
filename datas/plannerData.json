@@ -45,6 +45,35 @@
             "15": 646
         }
     },
+    "baseStats": {
+        "dynamic": {
+            "hp": {
+                "base": 110,
+                "perLevel": 10
+            },
+            "mp": {
+                "base": 115,
+                "perLevel": 15
+            }
+        },
+        "fixed": {
+            "physical_ap": 1,
+            "physical_dp": 1,
+            "atk_speed": 100,
+            "magic_ap": 1,
+            "magic_dp": 1,
+            "casting_speed": 100,
+            "accuracy": 1,
+            "evasion": 1,
+            "speed": 100,
+            "critical_multiplier": 150,
+            "critical_chance": 10,
+            "critical_defense_chance": 0,
+            "hp_regen": 10,
+            "mp_regen": 5,
+            "heal_multiplier": 100
+        }
+    },
     "weightClassBuffs": [
         {
             "id": "heavy",
@@ -4299,85 +4328,85 @@
         {
             "id": "head",
             "iconFallback": "/assets/helmet.png",
-            "positionClass": "gear-slot--pos-1",
+            "positionClass": "gear-slot--outer-top",
             "socketsEnabled": true
         },
         {
             "id": "chest",
             "iconFallback": "/assets/armor.png",
-            "positionClass": "gear-slot--pos-2",
+            "positionClass": "gear-slot--outer-tr",
             "socketsEnabled": true
         },
         {
             "id": "gloves",
             "iconFallback": "/assets/gloves.png",
-            "positionClass": "gear-slot--pos-3",
+            "positionClass": "gear-slot--outer-br",
             "socketsEnabled": true
         },
         {
             "id": "earring1",
             "iconFallback": "/assets/earring.png",
-            "positionClass": "gear-slot--pos-4",
+            "positionClass": "gear-slot--inner-tr",
             "socketsEnabled": true
         },
         {
             "id": "ring1",
             "iconFallback": "/assets/ring.png",
-            "positionClass": "gear-slot--pos-5",
+            "positionClass": "gear-slot--inner-tl",
             "socketsEnabled": true
         },
         {
             "id": "necklace",
             "iconFallback": "/assets/necklace.png",
-            "positionClass": "gear-slot--pos-6",
+            "positionClass": "gear-slot--inner-top",
             "socketsEnabled": true
         },
         {
             "id": "ring2",
             "iconFallback": "/assets/ring.png",
-            "positionClass": "gear-slot--pos-7",
+            "positionClass": "gear-slot--inner-bl",
             "socketsEnabled": true
         },
         {
             "id": "earring2",
             "iconFallback": "/assets/earring.png",
-            "positionClass": "gear-slot--pos-8",
+            "positionClass": "gear-slot--inner-br",
             "socketsEnabled": true
         },
         {
             "id": "bracelet",
             "iconFallback": "/assets/bracelet.png",
-            "positionClass": "gear-slot--pos-9",
+            "positionClass": "gear-slot--inner-bottom",
             "socketsEnabled": true
         },
         {
             "id": "boots",
             "iconFallback": "/assets/boots.png",
-            "positionClass": "gear-slot--pos-10",
+            "positionClass": "gear-slot--outer-bottom",
             "socketsEnabled": true
         },
         {
             "id": "card1",
             "iconFallback": "/assets/card.png",
-            "positionClass": "gear-slot--inner-1",
+            "positionClass": "gear-slot--extra-card1",
             "socketsEnabled": false
         },
         {
             "id": "weapon",
             "iconFallback": "/assets/weapon.png",
-            "positionClass": "gear-slot--inner-2",
+            "positionClass": "gear-slot--outer-tl",
             "socketsEnabled": true
         },
         {
             "id": "card2",
             "iconFallback": "/assets/card.png",
-            "positionClass": "gear-slot--inner-3",
+            "positionClass": "gear-slot--extra-card2",
             "socketsEnabled": false
         },
         {
             "id": "offhand",
             "iconFallback": "/assets/shield.png",
-            "positionClass": "gear-slot--inner-4",
+            "positionClass": "gear-slot--outer-bl",
             "socketsEnabled": true,
             "allowedClasses": [
                 "Sword & Shield"
@@ -4386,7 +4415,7 @@
         {
             "id": "bag",
             "iconFallback": "/assets/bag.png",
-            "positionClass": "gear-slot--inner-5",
+            "positionClass": "gear-slot--extra-bag",
             "socketsEnabled": true,
             "canUpgrade": false
         }
