@@ -43,6 +43,28 @@
             "13": 484,
             "14": 562,
             "15": 646
+        },
+        "maxCharacterLevel": 150,
+        "levelSliderTicks": [
+            1,
+            50,
+            100,
+            150
+        ],
+        "gradeToRarityThresholds": {
+            "5": 288,
+            "4": 240,
+            "3": 200,
+            "2": 160,
+            "1": 0
+        },
+        "maxRarityStars": 5,
+        "rarityNames": {
+            "1": "common",
+            "2": "uncommon",
+            "3": "rare",
+            "4": "epic",
+            "5": "legendary"
         }
     },
     "baseStats": {
@@ -4507,5 +4529,429 @@
         "mp",
         "accuracy",
         "evasion"
+    ],
+    "itemTypeClassification": {
+        "weaponTypes": [
+            "Sword",
+            "Staff",
+            "Bow",
+            "Dagger",
+            "Mace",
+            "Spear",
+            "Axe",
+            "Shield",
+            "Greatsword",
+            "Arcane Staff",
+            "Dual Axe",
+            "Dual Crossbow",
+            "Dual Dagger",
+            "Life Staff",
+            "Two Handed Sword",
+            "War Hammer",
+            "Crossbow"
+        ],
+        "armorPatterns": [
+            "[Heavy]",
+            "[Medium]",
+            "[Light]",
+            "[Robe]"
+        ],
+        "accessoryTypes": [
+            "Ring",
+            "Necklace",
+            "Earring",
+            "Bracelet",
+            "Belt",
+            "Talisman",
+            "Bag"
+        ],
+        "toolPatterns": [
+            "[Tool]",
+            "Gathering Tool"
+        ],
+        "costumePattern": "Costume"
+    },
+    "slotTypeMapping": {
+        "head": [
+            "Helmet [Heavy]",
+            "Helmet [Light]",
+            "Helmet [Robe]"
+        ],
+        "chest": [
+            "Armor [Heavy]",
+            "Armor [Light]",
+            "Armor [Robe]"
+        ],
+        "gloves": [
+            "Gauntlet [Heavy]",
+            "Gauntlet [Light]",
+            "Gauntlet [Robe]"
+        ],
+        "boots": [
+            "Boots [Heavy]",
+            "Boots [Light]",
+            "Boots [Robe]"
+        ],
+        "earring1": [
+            "Earring"
+        ],
+        "earring2": [
+            "Earring"
+        ],
+        "ring1": [
+            "Ring"
+        ],
+        "ring2": [
+            "Ring"
+        ],
+        "bracelet": [
+            "Bracelet"
+        ],
+        "necklace": [
+            "Necklace"
+        ],
+        "card1": [
+            "Power Card"
+        ],
+        "card2": [
+            "Power Card"
+        ],
+        "bag": [
+            "Bag"
+        ]
+    },
+    "classWeaponMapping": {
+        "Sword & Shield": {
+            "weapon": [
+                "Sword"
+            ],
+            "offhand": [
+                "Shield"
+            ]
+        },
+        "Two-Handed Sword": {
+            "weapon": [
+                "Two Handed Sword"
+            ],
+            "offhand": []
+        },
+        "Spear": {
+            "weapon": [
+                "Spear"
+            ],
+            "offhand": []
+        },
+        "Dual Axe": {
+            "weapon": [
+                "Dual Axe"
+            ],
+            "offhand": []
+        },
+        "Dual Dagger": {
+            "weapon": [
+                "Dual Dagger"
+            ],
+            "offhand": []
+        },
+        "War Hammer": {
+            "weapon": [
+                "War Hammer"
+            ],
+            "offhand": []
+        },
+        "Bow": {
+            "weapon": [
+                "Bow"
+            ],
+            "offhand": []
+        },
+        "Dual Crossbow": {
+            "weapon": [
+                "Dual Crossbow"
+            ],
+            "offhand": []
+        },
+        "Arcane Staff": {
+            "weapon": [
+                "Arcane Staff"
+            ],
+            "offhand": []
+        },
+        "Life Staff": {
+            "weapon": [
+                "Life Staff"
+            ],
+            "offhand": []
+        }
+    },
+    "codexCategories": [
+        {
+            "name": "Weapons",
+            "iconName": "Sword",
+            "subGroups": [
+                {
+                    "name": "Melee",
+                    "iconName": "Axe",
+                    "types": [
+                        "Dual Axe",
+                        "Dual Dagger",
+                        "Spear",
+                        "Sword",
+                        "Two Handed Sword",
+                        "War Hammer"
+                    ]
+                },
+                {
+                    "name": "Ranged",
+                    "iconName": "Crosshair",
+                    "types": [
+                        "Bow",
+                        "Dual Crossbow"
+                    ]
+                },
+                {
+                    "name": "Magic",
+                    "iconName": "Wand2",
+                    "types": [
+                        "Arcane Staff",
+                        "Life Staff"
+                    ]
+                },
+                {
+                    "name": "Shield",
+                    "iconName": "Shield",
+                    "types": [
+                        "Shield"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Armors",
+            "iconName": "Shield",
+            "subGroups": [
+                {
+                    "name": "Heavy",
+                    "iconName": "ArrowDownToDot",
+                    "types": [
+                        "Armor [Heavy]",
+                        "Boots [Heavy]",
+                        "Gauntlet [Heavy]",
+                        "Helmet [Heavy]"
+                    ]
+                },
+                {
+                    "name": "Light",
+                    "iconName": "Feather",
+                    "types": [
+                        "Armor [Light]",
+                        "Boots [Light]",
+                        "Gauntlet [Light]",
+                        "Helmet [Light]"
+                    ]
+                },
+                {
+                    "name": "Robe",
+                    "iconName": "Sparkles",
+                    "types": [
+                        "Armor [Robe]",
+                        "Boots [Robe]",
+                        "Gauntlet [Robe]",
+                        "Helmet [Robe]"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Accessories",
+            "iconName": "Gem",
+            "types": [
+                "Bag",
+                "Bracelet",
+                "Earring",
+                "Necklace",
+                "Ring",
+                "Talisman"
+            ]
+        },
+        {
+            "name": "Consumables",
+            "iconName": "FlaskConical",
+            "types": [
+                "Food",
+                "Potion",
+                "Supplement Potion"
+            ]
+        },
+        {
+            "name": "Materials & Crafting",
+            "iconName": "Package",
+            "subGroups": [
+                {
+                    "name": "Materials",
+                    "iconName": "Layers",
+                    "types": [
+                        "Enhancement Material",
+                        "Material",
+                        "Quest Material",
+                        "Usable Material"
+                    ]
+                },
+                {
+                    "name": "Stones",
+                    "iconName": "Gem",
+                    "types": [
+                        "Rune Stone",
+                        "Power Stone",
+                        "Skill Stone",
+                        "Puzzle Stone"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Housing & Stations",
+            "iconName": "Home",
+            "subGroups": [
+                {
+                    "name": "Workbenches",
+                    "iconName": "Hammer",
+                    "types": [
+                        "Alchemist's Workbench",
+                        "Auxiliary Workbenches",
+                        "Blacksmith's Forge",
+                        "Carpenter's Workbench",
+                        "Cook's Workbench",
+                        "Gem Cutting Workbench",
+                        "Jewel Crafting Workbench",
+                        "Tinkering Workbench",
+                        "Loom",
+                        "Sawmill",
+                        "Smelter",
+                        "Spinning Wheel",
+                        "Tanning Rack",
+                        "Essence Refiner"
+                    ]
+                },
+                {
+                    "name": "Furniture & Farm",
+                    "iconName": "Tent",
+                    "types": [
+                        "Home Furnitures",
+                        "Beehive",
+                        "Farmable Animal",
+                        "Seed"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tools",
+            "iconName": "Hammer",
+            "types": [
+                "Axe [Tool]",
+                "Fishing Rod [Tool]",
+                "Hunting Knife [Tool]",
+                "Pickaxe [Tool]",
+                "Sickle [Tool]"
+            ]
+        },
+        {
+            "name": "Mounts & Pets",
+            "iconName": "Rabbit",
+            "subGroups": [
+                {
+                    "name": "Mounts",
+                    "iconName": "Rabbit",
+                    "types": [
+                        "Mount"
+                    ]
+                },
+                {
+                    "name": "Mount Equipment",
+                    "iconName": "Package",
+                    "types": [
+                        "Mount - Horseshoes",
+                        "Mount - Saddle",
+                        "Mount - Stirrups"
+                    ]
+                },
+                {
+                    "name": "Pets",
+                    "iconName": "Ghost",
+                    "types": [
+                        "Pet"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Miscellaneous",
+            "iconName": "Box",
+            "subGroups": [
+                {
+                    "name": "Ammunition",
+                    "iconName": "Crosshair",
+                    "types": [
+                        "Arrow (Bow)",
+                        "Arrow (Dual Crossbow)"
+                    ]
+                },
+                {
+                    "name": "Costumes",
+                    "iconName": "Feather",
+                    "types": [
+                        "Costume - Armor",
+                        "Costume - Bow",
+                        "Costume - Dual Axe",
+                        "Costume - Dual Crossbow",
+                        "Costume - Dual Dagger",
+                        "Costume - Helmet",
+                        "Costume - Mount",
+                        "Costume - One Handed Sword",
+                        "Costume - Pet",
+                        "Costume - Quiver (Bow)",
+                        "Costume - Quiver (Dual Crossbow)",
+                        "Costume - Shield",
+                        "Costume - Spear",
+                        "Costume - Staff",
+                        "Costume - Two Handed Sword",
+                        "Costume - War Hammer"
+                    ]
+                },
+                {
+                    "name": "Skill Books",
+                    "iconName": "Book",
+                    "types": [
+                        "Skill Book [Arcane Staff]",
+                        "Skill Book [Bow]",
+                        "Skill Book [Dual Axe]",
+                        "Skill Book [Dual Crossbow]",
+                        "Skill Book [Dual Dagger]",
+                        "Skill Book [Life Staff]",
+                        "Skill Book [Spear]",
+                        "Skill Book [Sword]",
+                        "Skill Book [Two Handed Sword]",
+                        "Skill Book [War Hammer]"
+                    ]
+                },
+                {
+                    "name": "Vehicles & Ships",
+                    "iconName": "Anchor",
+                    "types": [
+                        "Defense Vehicles",
+                        "Merchant Ship",
+                        "Pirate Ship"
+                    ]
+                },
+                {
+                    "name": "Other",
+                    "iconName": "Box",
+                    "types": [
+                        "Power Card"
+                    ]
+                }
+            ]
+        }
     ]
 }
