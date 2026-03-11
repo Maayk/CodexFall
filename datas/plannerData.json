@@ -15,6 +15,13 @@
             "card2",
             "bag"
         ],
+        "statMirrors": [
+            {
+                "itemType": ["[Heavy]", "[Medium]", "[Light]", "[Robe]"],
+                "sourceStat": "hp",
+                "targetStat": "mp"
+            }
+        ],
         "gradeSliderTicks": [
             0,
             80,
