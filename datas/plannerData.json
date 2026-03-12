@@ -72,7 +72,9 @@
             "3": "rare",
             "4": "epic",
             "5": "legendary"
-        }
+        },
+        "mpMultiplier": 1.3,
+        "enableMpMultiplier": true
     },
     "baseStats": {
         "dynamic": {
@@ -149,8 +151,9 @@
                     "value": 10
                 },
                 "critical_multiplier": {
-                    "type": "percent",
-                    "value": 10
+                    "type": "flat",
+                    "value": 10,
+                    "display": "%"
                 },
                 "accuracy": {
                     "type": "percent",
@@ -194,8 +197,9 @@
                     "value": 10
                 },
                 "critical_chance": {
-                    "type": "percent",
-                    "value": 10
+                    "type": "flat",
+                    "value": 10,
+                    "display": "%"
                 },
                 "physical_dp": {
                     "type": "percent",
