@@ -17,7 +17,12 @@
         ],
         "statMirrors": [
             {
-                "itemType": ["[Heavy]", "[Medium]", "[Light]", "[Robe]"],
+                "itemType": [
+                    "[Heavy]",
+                    "[Medium]",
+                    "[Light]",
+                    "[Robe]"
+                ],
                 "sourceStat": "hp",
                 "targetStat": "mp"
             }
@@ -80,18 +85,18 @@
                 "1": 100,
                 "2": 100,
                 "3": 100,
-                "4": 55,
-                "5": 38.5,
-                "6": 16.5,
-                "7": 10,
-                "8": 6.5,
-                "9": 4,
-                "10": 3,
-                "11": 2.25,
-                "12": 1.5,
-                "13": 1.1,
-                "14": 0.75,
-                "15": 0.5
+                "4": 65,
+                "5": 43,
+                "6": 27,
+                "7": 16,
+                "8": 9,
+                "9": 6,
+                "10": 4,
+                "11": 3,
+                "12": 2.5,
+                "13": 2,
+                "14": 1.5,
+                "15": 1
             },
             "materialCostPerLevel": {
                 "1": 15000,
@@ -381,6 +386,104 @@
         }
     },
     "setBonuses": {
+        "uncommon": [
+            {
+                "set_name": "Sentinel's Guard",
+                "talisman": "Tempestbound",
+                "bonus_4": {
+                    "physical_dp": 110,
+                    "hp": 1000
+                }
+            },
+            {
+                "set_name": "Lifeward",
+                "talisman": "Divine Harmony",
+                "bonus_4": {
+                    "hp_regen": 90,
+                    "mp_regen": 90
+                }
+            },
+            {
+                "set_name": "Ironwall Defender",
+                "talisman": "Fortress of Valor",
+                "bonus_4": {
+                    "mp_regen": 90,
+                    "evasion": 60
+                }
+            },
+            {
+                "set_name": "Dawnbringer",
+                "talisman": "Seraphic Grace",
+                "bonus_4": {
+                    "mp": 1000,
+                    "heal_multiplier": 10
+                }
+            },
+            {
+                "set_name": "Shadowstrike",
+                "talisman": "Bladeweaver",
+                "bonus_4": {
+                    "physical_ap": 110,
+                    "hp": 1000
+                }
+            },
+            {
+                "set_name": "Guardian's Resolve",
+                "talisman": "Sovereign's Legacy",
+                "bonus_4": {
+                    "physical_dp": 110,
+                    "hp": 1000
+                }
+            },
+            {
+                "set_name": "Swiftstrike",
+                "talisman": "Dragonclaw",
+                "bonus_4": {
+                    "accuracy": 70,
+                    "critical_chance": 5
+                }
+            },
+            {
+                "set_name": "Sanctified Bastion",
+                "talisman": "Divine Aegis",
+                "bonus_4": {
+                    "hp": 1000,
+                    "heal_multiplier": 10
+                }
+            },
+            {
+                "set_name": "Steelbreaker",
+                "talisman": "Ravager's Dominion",
+                "bonus_4": {
+                    "physical_ap": 110,
+                    "hp": 1000
+                }
+            },
+            {
+                "set_name": "Mystic Ember",
+                "talisman": "Astral Conflux",
+                "bonus_4": {
+                    "magic_ap": 110,
+                    "mp": 1000
+                }
+            },
+            {
+                "set_name": "Arcane Focus",
+                "talisman": "Eldritch Catalyst",
+                "bonus_4": {
+                    "mp_regen": 90,
+                    "critical_chance": 5
+                }
+            },
+            {
+                "set_name": "Arcane Wisp",
+                "talisman": "Spellfire",
+                "bonus_4": {
+                    "magic_ap": 110,
+                    "hp": 1000
+                }
+            }
+        ],
         "rare": [
             {
                 "set_name": "Whispering Gale",
@@ -416,7 +519,7 @@
                 }
             },
             {
-                "set_name": "Lifebender",
+                "set_name": "Lifebinder",
                 "talisman": "Seraphic Grace",
                 "bonus_3": {
                     "hp": 1000,
