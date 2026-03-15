@@ -78,8 +78,10 @@
             "4": "epic",
             "5": "legendary"
         },
-        "mpMultiplier": 1.3,
+        "mpMultiplier": 1.29612,
         "enableMpMultiplier": true,
+        "hpMultiplier": 0.973566,
+        "enableHpMultiplier": true,
         "enhancementConfig": {
             "successRates": {
                 "1": 100,
@@ -121,11 +123,11 @@
         "dynamic": {
             "hp": {
                 "base": 110,
-                "perLevel": 10
+                "perLevel": 19.443769
             },
             "mp": {
                 "base": 115,
-                "perLevel": 15
+                "perLevel": 18
             }
         },
         "fixed": {
@@ -842,7 +844,7 @@
             "bonuses": [
                 {
                     "stat": "hp",
-                    "multiplier": 75
+                    "multiplier": 75.0
                 },
                 {
                     "stat": "hp_regen",
@@ -876,7 +878,7 @@
             "bonuses": [
                 {
                     "stat": "mp",
-                    "multiplier": 50
+                    "multiplier": 46.733
                 },
                 {
                     "stat": "mp_regen",
