@@ -1,5 +1,16 @@
 {
     "config": {
+        "itemTypeClassification": {
+            "weaponTypes": [
+                "Sword", "Staff", "Bow", "Dagger", "Mace", "Spear", "Axe", "Shield",
+                "Greatsword", "Arcane Staff", "Dual Axe", "Dual Crossbow", "Dual Dagger",
+                "Life Staff", "Two Handed Sword", "War Hammer", "Crossbow", "Espada"
+            ],
+            "armorPatterns": ["[Heavy]", "[Medium]", "[Light]", "[Robe]"],
+            "accessoryTypes": ["Ring", "Necklace", "Earring", "Bracelet", "Belt"],
+            "toolPatterns": ["[Tool]", "Gathering Tool"],
+            "costumePattern": "Costume"
+        },
         "maxAttributePoints": 600,
         "maxAttributePerAttr": 100,
         "maxUpgradeLevel": 15,
@@ -4875,11 +4886,11 @@
     "codexCategories": [
         {
             "name": "Weapons",
-            "iconName": "Sword",
+            "iconName": "game-icons:broadsword",
             "subGroups": [
                 {
                     "name": "Melee",
-                    "iconName": "Axe",
+                    "iconName": "game-icons:battered-axe",
                     "types": [
                         "Dual Axe",
                         "Dual Dagger",
@@ -4891,7 +4902,7 @@
                 },
                 {
                     "name": "Ranged",
-                    "iconName": "Crosshair",
+                    "iconName": "game-icons:high-shot",
                     "types": [
                         "Bow",
                         "Dual Crossbow"
@@ -4899,7 +4910,7 @@
                 },
                 {
                     "name": "Magic",
-                    "iconName": "Wand2",
+                    "iconName": "game-icons:fairy-wand",
                     "types": [
                         "Arcane Staff",
                         "Life Staff"
@@ -4907,7 +4918,7 @@
                 },
                 {
                     "name": "Shield",
-                    "iconName": "Shield",
+                    "iconName": "game-icons:round-shield",
                     "types": [
                         "Shield"
                     ]
@@ -4916,11 +4927,11 @@
         },
         {
             "name": "Armors",
-            "iconName": "Shield",
+            "iconName": "game-icons:breastplate",
             "subGroups": [
                 {
                     "name": "Heavy",
-                    "iconName": "ArrowDownToDot",
+                    "iconName": "game-icons:scale-mail",
                     "types": [
                         "Armor [Heavy]",
                         "Boots [Heavy]",
@@ -4930,7 +4941,7 @@
                 },
                 {
                     "name": "Light",
-                    "iconName": "Feather",
+                    "iconName": "game-icons:leather-vest",
                     "types": [
                         "Armor [Light]",
                         "Boots [Light]",
@@ -4940,7 +4951,7 @@
                 },
                 {
                     "name": "Robe",
-                    "iconName": "Sparkles",
+                    "iconName": "game-icons:robe",
                     "types": [
                         "Armor [Robe]",
                         "Boots [Robe]",
@@ -4952,7 +4963,7 @@
         },
         {
             "name": "Accessories",
-            "iconName": "Gem",
+            "iconName": "game-icons:diamond-ring",
             "types": [
                 "Bag",
                 "Bracelet",
@@ -4964,7 +4975,7 @@
         },
         {
             "name": "Consumables",
-            "iconName": "FlaskConical",
+            "iconName": "game-icons:health-potion",
             "types": [
                 "Food",
                 "Potion",
@@ -4973,11 +4984,11 @@
         },
         {
             "name": "Materials & Crafting",
-            "iconName": "Package",
+            "iconName": "game-icons:anvil",
             "subGroups": [
                 {
                     "name": "Materials",
-                    "iconName": "Layers",
+                    "iconName": "game-icons:wood-pile",
                     "types": [
                         "Enhancement Material",
                         "Material",
@@ -4987,7 +4998,7 @@
                 },
                 {
                     "name": "Stones",
-                    "iconName": "Gem",
+                    "iconName": "game-icons:runes-star",
                     "types": [
                         "Rune Stone",
                         "Power Stone",
@@ -4999,11 +5010,11 @@
         },
         {
             "name": "Housing & Stations",
-            "iconName": "Home",
+            "iconName": "game-icons:house",
             "subGroups": [
                 {
                     "name": "Workbenches",
-                    "iconName": "Hammer",
+                    "iconName": "game-icons:hammer-nails",
                     "types": [
                         "Alchemist's Workbench",
                         "Auxiliary Workbenches",
@@ -5023,7 +5034,7 @@
                 },
                 {
                     "name": "Furniture & Farm",
-                    "iconName": "Tent",
+                    "iconName": "game-icons:wooden-chair",
                     "types": [
                         "Home Furnitures",
                         "Beehive",
@@ -5035,7 +5046,7 @@
         },
         {
             "name": "Tools",
-            "iconName": "Hammer",
+            "iconName": "game-icons:mining",
             "types": [
                 "Axe [Tool]",
                 "Fishing Rod [Tool]",
@@ -5046,18 +5057,18 @@
         },
         {
             "name": "Mounts & Pets",
-            "iconName": "Rabbit",
+            "iconName": "game-icons:horse-head",
             "subGroups": [
                 {
                     "name": "Mounts",
-                    "iconName": "Rabbit",
+                    "iconName": "game-icons:saddle",
                     "types": [
                         "Mount"
                     ]
                 },
                 {
                     "name": "Mount Equipment",
-                    "iconName": "Package",
+                    "iconName": "game-icons:horseshoe",
                     "types": [
                         "Mount - Horseshoes",
                         "Mount - Saddle",
@@ -5066,7 +5077,7 @@
                 },
                 {
                     "name": "Pets",
-                    "iconName": "Ghost",
+                    "iconName": "game-icons:sitting-dog",
                     "types": [
                         "Pet"
                     ]
@@ -5075,11 +5086,11 @@
         },
         {
             "name": "Miscellaneous",
-            "iconName": "Box",
+            "iconName": "game-icons:locked-chest",
             "subGroups": [
                 {
                     "name": "Ammunition",
-                    "iconName": "Crosshair",
+                    "iconName": "game-icons:quiver",
                     "types": [
                         "Arrow (Bow)",
                         "Arrow (Dual Crossbow)"
@@ -5087,7 +5098,7 @@
                 },
                 {
                     "name": "Costumes",
-                    "iconName": "Feather",
+                    "iconName": "game-icons:domino-mask",
                     "types": [
                         "Costume - Armor",
                         "Costume - Bow",
@@ -5109,7 +5120,7 @@
                 },
                 {
                     "name": "Skill Books",
-                    "iconName": "Book",
+                    "iconName": "game-icons:spell-book",
                     "types": [
                         "Skill Book [Arcane Staff]",
                         "Skill Book [Bow]",
@@ -5125,7 +5136,7 @@
                 },
                 {
                     "name": "Vehicles & Ships",
-                    "iconName": "Anchor",
+                    "iconName": "game-icons:galleon",
                     "types": [
                         "Defense Vehicles",
                         "Merchant Ship",
@@ -5134,12 +5145,40 @@
                 },
                 {
                     "name": "Other",
-                    "iconName": "Box",
+                    "iconName": "game-icons:swap-bag",
                     "types": [
                         "Power Card"
                     ]
                 }
             ]
         }
-    ]
+    ],
+    "codexTypeIcons": {
+        "Bag": "game-icons:knapsack",
+        "Bracelet": "game-icons:gem-chain",
+        "Earring": "game-icons:earrings",
+        "Necklace": "game-icons:necklace",
+        "Ring": "game-icons:diamond-ring",
+        "Talisman": "game-icons:gem-pendant",
+        "Food": "game-icons:meat",
+        "Potion": "game-icons:health-potion",
+        "Supplement Potion": "game-icons:magic-potion",
+        "Materials": "game-icons:wood-pile",
+        "Stones": "game-icons:stone-block",
+        "Workbenches": "game-icons:anvil",
+        "Furniture & Farm": "game-icons:wooden-chair",
+        "Axe [Tool]": "game-icons:wood-axe",
+        "Fishing Rod [Tool]": "game-icons:fishing-pole",
+        "Hunting Knife [Tool]": "game-icons:bowie-knife",
+        "Pickaxe [Tool]": "game-icons:mining",
+        "Sickle [Tool]": "game-icons:scythe",
+        "Mounts": "game-icons:horse-head",
+        "Mount Equipment": "game-icons:saddle",
+        "Pets": "game-icons:wolf-head",
+        "Ammunition": "game-icons:quiver",
+        "Power Card": "game-icons:card-play",
+        "Defense Vehicles": "game-icons:cannon",
+        "Merchant Ship": "game-icons:sailboat",
+        "Pirate Ship": "game-icons:galleon"
+    }
 }
