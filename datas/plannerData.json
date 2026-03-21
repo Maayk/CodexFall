@@ -102,6 +102,12 @@
             100,
             150
         ],
+        "powerStoneMinLevel": 75,
+        "powerStoneLevelSliderTicks": [
+            75,
+            100,
+            150
+        ],
         "gradeToRarityThresholds": {
             "5": 288,
             "4": 210,
@@ -157,6 +163,14 @@
                 "15": 5000000
             }
         }
+    },
+    "featuredItemIds": ["20051", "14020", "11806"],
+    "featuredConfig": {
+        "maxFeaturedRandomItems": 7,
+        "randomItemFilters": [
+            { "type": "Power Stone" },
+            { "type": "Food" }
+        ]
     },
     "baseStats": {
         "dynamic": {
@@ -424,6 +438,36 @@
                 "base": 1,
                 "perLevel": 0
             }
+        }
+    },
+    "chestRewards": {
+        "11806": {
+            "name": "Twitch Chest",
+            "rewards": [
+                { "id": "23201" },
+                { "id": "23202" },
+                { "id": "23203" },
+                { "id": "23204" },
+                { "id": "11815", "quantity": 150 },
+                { "id": "11816", "quantity": 125 },
+                { "id": "11817", "quantity": 100 },
+                { "id": "23205" },
+                { "id": "23206" },
+                { "id": "10944" },
+                { "id": "10945" },
+                { "id": "23207" },
+                { "id": "23208" },
+                { "id": "23209" },
+                { "id": "23210" },
+                { "id": "23211" },
+                { "id": "23212" },
+                { "id": "10942" },
+                { "id": "Head Costume", "isText": true },
+                { "id": "10943" },
+                { "id": "Mount Costume", "isText": true },
+                { "id": "Pet Costume", "isText": true },
+                { "id": "14020" }
+            ]
         }
     },
     "setBonuses": {
