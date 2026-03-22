@@ -405,14 +405,14 @@
         },
         "23107": {
             "hp_regen": {
-                "base": 13,
-                "perLevel": 0.48
+                "base": 14,
+                "perLevel": 0
             }
         },
         "23108": {
             "mp_regen": {
-                "base": 13,
-                "perLevel": 0.48
+                "base": 14,
+                "perLevel": 0
             }
         },
         "23109": {
