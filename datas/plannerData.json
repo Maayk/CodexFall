@@ -109,11 +109,11 @@
             150
         ],
         "gradeToRarityThresholds": {
-            "5": 288,
-            "4": 210,
-            "3": 170,
+            "1": 0,
             "2": 5,
-            "1": 0
+            "3": 170,
+            "4": 210,
+            "5": 288
         },
         "maxRarityStars": 5,
         "rarityNames": {
@@ -125,7 +125,7 @@
         },
         "mpMultiplier": 1.270332271104649,
         "enableMpMultiplier": true,
-        "hpMultiplier": 1.0040,
+        "hpMultiplier": 1.004,
         "enableHpMultiplier": true,
         "enhancementConfig": {
             "successRates": {
@@ -164,12 +164,20 @@
             }
         }
     },
-    "featuredItemIds": ["20051", "14020", "11806"],
+    "featuredItemIds": [
+        "20051",
+        "14020",
+        "11806"
+    ],
     "featuredConfig": {
         "maxFeaturedRandomItems": 7,
         "randomItemFilters": [
-            { "type": "Power Stone" },
-            { "type": "Food" }
+            {
+                "type": "Power Stone"
+            },
+            {
+                "type": "Food"
+            }
         ]
     },
     "baseStats": {
@@ -444,29 +452,81 @@
         "11806": {
             "name": "Twitch Chest",
             "rewards": [
-                { "id": "23201" },
-                { "id": "23202" },
-                { "id": "23203" },
-                { "id": "23204" },
-                { "id": "11815", "quantity": 150 },
-                { "id": "11816", "quantity": 125 },
-                { "id": "11817", "quantity": 100 },
-                { "id": "23205" },
-                { "id": "23206" },
-                { "id": "10944" },
-                { "id": "10945" },
-                { "id": "23207" },
-                { "id": "23208" },
-                { "id": "23209" },
-                { "id": "23210" },
-                { "id": "23211" },
-                { "id": "23212" },
-                { "id": "10942" },
-                { "id": "Head Costume", "isText": true },
-                { "id": "10943" },
-                { "id": "Mount Costume", "isText": true },
-                { "id": "Pet Costume", "isText": true },
-                { "id": "14020" }
+                {
+                    "id": "23201"
+                },
+                {
+                    "id": "23202"
+                },
+                {
+                    "id": "23203"
+                },
+                {
+                    "id": "23204"
+                },
+                {
+                    "id": "11815",
+                    "quantity": 150
+                },
+                {
+                    "id": "11816",
+                    "quantity": 125
+                },
+                {
+                    "id": "11817",
+                    "quantity": 100
+                },
+                {
+                    "id": "23205"
+                },
+                {
+                    "id": "23206"
+                },
+                {
+                    "id": "10944"
+                },
+                {
+                    "id": "10945"
+                },
+                {
+                    "id": "23207"
+                },
+                {
+                    "id": "23208"
+                },
+                {
+                    "id": "23209"
+                },
+                {
+                    "id": "23210"
+                },
+                {
+                    "id": "23211"
+                },
+                {
+                    "id": "23212"
+                },
+                {
+                    "id": "10942"
+                },
+                {
+                    "id": "Head Costume",
+                    "isText": true
+                },
+                {
+                    "id": "10943"
+                },
+                {
+                    "id": "Mount Costume",
+                    "isText": true
+                },
+                {
+                    "id": "Pet Costume",
+                    "isText": true
+                },
+                {
+                    "id": "14020"
+                }
             ]
         }
     },
@@ -999,7 +1059,7 @@
             "bonuses": [
                 {
                     "stat": "hp",
-                    "multiplier": 75.0
+                    "multiplier": 75
                 },
                 {
                     "stat": "hp_regen",
@@ -1214,7 +1274,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "+{def}% DEF/lvl",
+                                    "template": "+{def}% DEF",
                                     "params": {
                                         "def": {
                                             "base": 0,
@@ -1443,20 +1503,11 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{def}% DEF/lvl",
+                                    "template": "Shield: {shield}% DEF",
                                     "params": {
-                                        "def": {
-                                            "base": 4,
-                                            "scaling": 0
-                                        }
-                                    }
-                                },
-                                {
-                                    "template": "planner.effects.shield",
-                                    "params": {
-                                        "amount": {
+                                        "shield": {
                                             "base": 100,
-                                            "scaling": 0
+                                            "scaling": 4
                                         }
                                     }
                                 }
@@ -1480,6 +1531,15 @@
                                         "dmg": {
                                             "base": 200,
                                             "scaling": 25
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "-{def}% DEF/5s",
+                                    "params": {
+                                        "def": {
+                                            "base": 12.5,
+                                            "scaling": 0.5
                                         }
                                     }
                                 }
@@ -1540,7 +1600,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "200% Phys DMG x3"
+                                    "template": "{dmg}% Phys DMG x3",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 4
+                                        }
+                                    }
                                 },
                                 {
                                     "template": "planner.effects.slow",
@@ -1570,7 +1636,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "200% Phys DMG"
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 7
+                                        }
+                                    }
                                 },
                                 {
                                     "template": "planner.effects.knockdown"
@@ -1592,21 +1664,21 @@
                                 {
                                     "template": "200% Phys DMG",
                                     "params": {
-                                        "buff": {
-                                            "base": 0,
-                                            "scaling": 0.8
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 0
                                         }
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.defDown",
+                                    "template": "+{buff}% Buffs | {def}% DEF Down",
                                     "params": {
-                                        "amount": {
-                                            "base": 20,
-                                            "scaling": 0
+                                        "buff": {
+                                            "base": 15,
+                                            "scaling": 0.8
                                         },
-                                        "duration": {
-                                            "base": 0,
+                                        "def": {
+                                            "base": 20,
                                             "scaling": 0
                                         }
                                     }
@@ -1626,7 +1698,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "160% Phys DMG"
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 160,
+                                            "scaling": 8
+                                        }
+                                    }
                                 },
                                 {
                                     "template": "planner.effects.burn",
@@ -1677,13 +1755,7 @@
                                     "template": "planner.effects.pull"
                                 },
                                 {
-                                    "template": "planner.effects.shield",
-                                    "params": {
-                                        "amount": {
-                                            "base": 0.5,
-                                            "scaling": 0
-                                        }
-                                    }
+                                    "template": "Shield 0.5% per 1% HP missing"
                                 }
                             ],
                             "description": "planner.skills.last_stand.description",
@@ -1734,7 +1806,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "130% Phys DMG x3 | CD {cd}s",
+                                    "template": "100% / 100% / 130% Phys DMG | CD {cd}s",
                                     "params": {
                                         "cd": {
                                             "base": 0,
@@ -1757,11 +1829,11 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "+{buff}% Buff/lvl",
+                                    "template": "+{buff}% Buffs",
                                     "params": {
                                         "buff": {
-                                            "base": 1,
-                                            "scaling": 0
+                                            "base": 10,
+                                            "scaling": 1
                                         }
                                     }
                                 }
@@ -1860,6 +1932,9 @@
                                             "scaling": 0
                                         }
                                     }
+                                },
+                                {
+                                    "template": "+5% HP/s (Allies)"
                                 }
                             ],
                             "description": "planner.skills.final_verdict.description",
@@ -1921,7 +1996,7 @@
                                     "params": {
                                         "amount": {
                                             "base": 7.5,
-                                            "scaling": 0
+                                            "scaling": 0.5
                                         },
                                         "duration": {
                                             "base": 4,
@@ -1964,6 +2039,15 @@
                                             "scaling": 0
                                         }
                                     }
+                                },
+                                {
+                                    "template": "planner.effects.heavy_wound",
+                                    "params": {
+                                        "healing_reduction": {
+                                            "base": 50,
+                                            "scaling": 0
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.spearfall.description",
@@ -1985,6 +2069,18 @@
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.4
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.bleed"
+                                },
+                                {
+                                    "template": "+{buff}% Move Speed",
+                                    "params": {
+                                        "buff": {
+                                            "base": 20,
+                                            "scaling": 1.6
                                         }
                                     }
                                 }
@@ -2016,7 +2112,7 @@
                                     "params": {
                                         "amount": {
                                             "base": 10,
-                                            "scaling": 0
+                                            "scaling": 0.4
                                         }
                                     }
                                 }
@@ -2083,6 +2179,15 @@
                                             "scaling": 0
                                         }
                                     }
+                                },
+                                {
+                                    "template": "planner.effects.heavy_wound",
+                                    "params": {
+                                        "healing_reduction": {
+                                            "base": 50,
+                                            "scaling": 0
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.dragons_fury.description",
@@ -2112,6 +2217,10 @@
                                 {
                                     "template": "200% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 7
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
@@ -2148,9 +2257,22 @@
                                 {
                                     "template": "190% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 6
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 20,
+                                            "scaling": 0.4
                                         }
                                     }
                                 },
@@ -2174,6 +2296,10 @@
                                 {
                                     "template": "190% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 6
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
@@ -2197,6 +2323,10 @@
                                 {
                                     "template": "190% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 7
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
@@ -2220,6 +2350,10 @@
                                 {
                                     "template": "190% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 6
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.3
@@ -2243,8 +2377,8 @@
                                     "template": "planner.effects.defDown",
                                     "params": {
                                         "amount": {
-                                            "base": 0.4,
-                                            "scaling": 0
+                                            "base": 10,
+                                            "scaling": 0.4
                                         },
                                         "duration": {
                                             "base": 0,
@@ -2321,7 +2455,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG"
+                                    "template": "100% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 8
+                                        }
+                                    }
                                 },
                                 {
                                     "template": "planner.effects.slow",
@@ -2387,7 +2527,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG"
+                                    "template": "100% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 8
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.slaughter.description",
@@ -2404,7 +2550,35 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "50% Phys DMG"
+                                    "template": "50% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 8
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.sacrifice",
+                                    "params": {
+                                        "hp": {
+                                            "base": 8,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.atkSpeed",
+                                    "params": {
+                                        "amount": {
+                                            "base": 10,
+                                            "scaling": 1
+                                        },
+                                        "duration": {
+                                            "base": 8,
+                                            "scaling": 0
+                                        }
+                                    }
                                 },
                                 {
                                     "template": "planner.effects.shield",
@@ -2412,6 +2586,49 @@
                                         "amount": {
                                             "base": 10,
                                             "scaling": 1
+                                        },
+                                        "duration": {
+                                            "base": 8,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.critChance",
+                                    "params": {
+                                        "amount": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 8,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.critDamage",
+                                    "params": {
+                                        "amount": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 8,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.defBothDown",
+                                    "params": {
+                                        "amount": {
+                                            "base": 15,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 8,
+                                            "scaling": 0
                                         }
                                     }
                                 }
@@ -2430,7 +2647,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "200% Phys DMG"
+                                    "template": "200% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 8
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.rage_burst.description",
@@ -2447,8 +2670,12 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "200% Phys DMG | CD {cd}s",
+                                    "template": "{dmg}% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 10
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
@@ -2490,7 +2717,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "90% Phys DMG"
+                                    "template": "90% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 5
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.savage_cleave.description",
@@ -2511,6 +2744,15 @@
                                     "params": {
                                         "dmg": {
                                             "base": 80,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.shock_explosion",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
                                             "scaling": 8
                                         }
                                     }
@@ -2530,7 +2772,13 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "190% Phys DMG"
+                                    "template": "190% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 5
+                                        }
+                                    }
                                 },
                                 {
                                     "template": "planner.effects.slow",
@@ -2560,7 +2808,26 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG"
+                                    "template": "120% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 9
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.bleed",
+                                    "params": {
+                                        "amount": {
+                                            "base": 10,
+                                            "scaling": 0
+                                        },
+                                        "duration": {
+                                            "base": 3,
+                                            "scaling": 0
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.deathroll.description",
@@ -2581,9 +2848,15 @@
                                     "params": {
                                         "dmg": {
                                             "base": 110,
-                                            "scaling": 100
+                                            "scaling": 4
                                         }
                                     }
+                                },
+                                {
+                                    "template": "planner.effects.bleed"
+                                },
+                                {
+                                    "template": "planner.effects.pull"
                                 },
                                 {
                                     "template": "planner.effects.slow",
@@ -2613,7 +2886,22 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "200% Phys DMG"
+                                    "template": "200% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 0,
+                                            "scaling": 16
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "planner.effects.missingHPBonus",
+                                    "params": {
+                                        "amount": {
+                                            "base": 1,
+                                            "scaling": 0
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.apocalyptic_might.description",
@@ -2821,8 +3109,12 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "template": "{dmg}% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 9
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
@@ -2860,8 +3152,12 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "180% Phys DMG | CD {cd}s",
+                                    "template": "{dmg}% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 180,
+                                            "scaling": 8
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.4
@@ -2933,7 +3229,7 @@
                                     "params": {
                                         "dmg": {
                                             "base": 280,
-                                            "scaling": 17
+                                            "scaling": 22
                                         }
                                     }
                                 }
@@ -3030,7 +3326,7 @@
                                     "params": {
                                         "amount": {
                                             "base": 100,
-                                            "scaling": 0
+                                            "scaling": 4
                                         }
                                     }
                                 }
@@ -3081,8 +3377,12 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "template": "{dmg}% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 10
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.4
@@ -3209,7 +3509,7 @@
                                     "template": "{dmg}% Phys DMG",
                                     "params": {
                                         "dmg": {
-                                            "base": 10,
+                                            "base": 220,
                                             "scaling": 10
                                         }
                                     }
@@ -3238,8 +3538,12 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "template": "{dmg}% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 7
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.2
@@ -3287,7 +3591,7 @@
                                     "params": {
                                         "amount": {
                                             "base": 15,
-                                            "scaling": 0
+                                            "scaling": 0.5
                                         }
                                     }
                                 }
@@ -3310,7 +3614,7 @@
                                     "params": {
                                         "dmg": {
                                             "base": 100,
-                                            "scaling": 8
+                                            "scaling": 15
                                         }
                                     }
                                 }
@@ -3374,7 +3678,7 @@
                                     "template": "{dmg}% Phys DMG",
                                     "params": {
                                         "dmg": {
-                                            "base": 180,
+                                            "base": 220,
                                             "scaling": 9
                                         }
                                     }
@@ -3397,7 +3701,7 @@
                                     "template": "{dmg}% Phys DMG x5",
                                     "params": {
                                         "dmg": {
-                                            "base": 60,
+                                            "base": 100,
                                             "scaling": 5
                                         }
                                     }
@@ -3417,8 +3721,12 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "100% Phys DMG | CD {cd}s",
+                                    "template": "{dmg}% Phys DMG | CD {cd}s",
                                     "params": {
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 6
+                                        },
                                         "cd": {
                                             "base": 0,
                                             "scaling": -0.4
@@ -3513,7 +3821,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Phys DMG x5",
+                                    "template": "{dmg}% Phys DMG x10",
                                     "params": {
                                         "dmg": {
                                             "base": 50,
@@ -3618,7 +3926,16 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "200% Phys DMG"
+                                    "template": "{dmg}% Phys DMG (1st hit)",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 200,
+                                            "scaling": 10
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "60% Phys DMG (Bounce)"
                                 },
                                 {
                                     "template": "planner.effects.slow",
@@ -3703,10 +4020,28 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "planner.effects.shield",
+                                    "template": "Escudo {shield}%",
                                     "params": {
-                                        "amount": {
+                                        "shield": {
                                             "base": 15,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Atk Speed +{atkSpeed}%",
+                                    "params": {
+                                        "atkSpeed": {
+                                            "base": 10,
+                                            "scaling": 0.5
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Move Speed +{moveSpeed}%",
+                                    "params": {
+                                        "moveSpeed": {
+                                            "base": 10,
                                             "scaling": 0.5
                                         }
                                     }
@@ -3733,6 +4068,15 @@
                                             "scaling": 2
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Move Speed & Crit Chance +{buff}%",
+                                    "params": {
+                                        "buff": {
+                                            "base": 20,
+                                            "scaling": 0
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.multi_shot.description",
@@ -3749,11 +4093,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "CD {cd}s",
+                                    "template": "Next Attack +{dmg}% DMG",
                                     "params": {
-                                        "cd": {
+                                        "dmg": {
+                                            "base": 50,
+                                            "scaling": 2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "CD -{cd_s}s",
+                                    "params": {
+                                        "cd_s": {
                                             "base": 0,
-                                            "scaling": -0.2
+                                            "scaling": 0.2
                                         }
                                     }
                                 }
@@ -3779,6 +4132,24 @@
                                             "scaling": 8
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Move Speed -{ms}%",
+                                    "params": {
+                                        "ms": {
+                                            "base": 40,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Phys Def -{pd}%",
+                                    "params": {
+                                        "pd": {
+                                            "base": 20,
+                                            "scaling": 0
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.bolt_hail.description",
@@ -3795,11 +4166,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "CD {cd}s",
+                                    "template": "Move Speed +{ms}%",
                                     "params": {
-                                        "cd": {
+                                        "ms": {
+                                            "base": 25,
+                                            "scaling": 2
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "CD -{cd_s}s",
+                                    "params": {
+                                        "cd_s": {
                                             "base": 0,
-                                            "scaling": -0.3
+                                            "scaling": 0.3
                                         }
                                     }
                                 }
@@ -3875,7 +4255,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Phys DMG",
+                                    "template": "{dmg}% Phys DMG Total",
                                     "params": {
                                         "dmg": {
                                             "base": 250,
@@ -3907,9 +4287,9 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.stun",
+                                    "template": "Stun {dur}s",
                                     "params": {
-                                        "duration": {
+                                        "dur": {
                                             "base": 2,
                                             "scaling": 0
                                         }
@@ -3930,7 +4310,22 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "150% Phys DMG"
+                                    "template": "{dmg}% Phys DMG",
+                                    "params": {
+                                        "dmg": {
+                                            "base": 150,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Atk/Def -{debuff}%",
+                                    "params": {
+                                        "debuff": {
+                                            "base": 25,
+                                            "scaling": 1
+                                        }
+                                    }
                                 }
                             ],
                             "description": "planner.skills.steel_trap.description",
@@ -3947,11 +4342,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "CD {cd}s",
+                                    "template": "Move Speed +{ms}%",
                                     "params": {
-                                        "cd": {
+                                        "ms": {
+                                            "base": 100,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "CD -{cd_s}s",
+                                    "params": {
+                                        "cd_s": {
                                             "base": 0,
-                                            "scaling": -0.3
+                                            "scaling": 0.3
                                         }
                                     }
                                 }
@@ -3970,11 +4374,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "CD {cd}s",
+                                    "template": "Move/Atk Spd & Phys Atk +{buff}%",
                                     "params": {
-                                        "cd": {
+                                        "buff": {
+                                            "base": 35,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "CD -{cd_s}s",
+                                    "params": {
+                                        "cd_s": {
                                             "base": 0,
-                                            "scaling": -2
+                                            "scaling": 2
                                         }
                                     }
                                 }
@@ -4006,13 +4419,13 @@
                             "number": 1,
                             "name": "planner.skills.tornado.name",
                             "baseCooldown": 13,
-                            "baseManaCost": 60,
+                            "baseManaCost": 87,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 140,
@@ -4021,14 +4434,10 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.slow",
+                                    "template": "Slow {amt}%",
                                     "params": {
-                                        "amount": {
+                                        "amt": {
                                             "base": 70,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 2,
                                             "scaling": 0
                                         }
                                     }
@@ -4042,13 +4451,13 @@
                             "number": 3,
                             "name": "planner.skills.meteor.name",
                             "baseCooldown": 13,
-                            "baseManaCost": 52,
+                            "baseManaCost": 98,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 100,
@@ -4057,26 +4466,8 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.stun",
-                                    "params": {
-                                        "duration": {
-                                            "base": 1,
-                                            "scaling": 0
-                                        }
-                                    }
-                                },
-                                {
-                                    "template": "planner.effects.burn",
-                                    "params": {
-                                        "amount": {
-                                            "base": 30,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 2,
-                                            "scaling": 0
-                                        }
-                                    }
+                                    "template": "Stun 1s & Burn 30%/s",
+                                    "params": {}
                                 }
                             ],
                             "description": "planner.skills.meteor.description",
@@ -4087,13 +4478,13 @@
                             "number": 4,
                             "name": "planner.skills.ice_cage.name",
                             "baseCooldown": 15,
-                            "baseManaCost": 60,
+                            "baseManaCost": 87,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 140,
@@ -4102,13 +4493,8 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.freeze",
-                                    "params": {
-                                        "duration": {
-                                            "base": 2,
-                                            "scaling": 0
-                                        }
-                                    }
+                                    "template": "Freeze 2s",
+                                    "params": {}
                                 }
                             ],
                             "description": "planner.skills.ice_cage.description",
@@ -4119,13 +4505,13 @@
                             "number": 7,
                             "name": "planner.skills.thunderstrike.name",
                             "baseCooldown": 13,
-                            "baseManaCost": 88,
+                            "baseManaCost": 127,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 180,
@@ -4142,13 +4528,13 @@
                             "number": 8,
                             "name": "planner.skills.earths_wake.name",
                             "baseCooldown": 13,
-                            "baseManaCost": 85,
+                            "baseManaCost": 123,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG x3",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 140,
@@ -4157,17 +4543,8 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.defDown",
-                                    "params": {
-                                        "amount": {
-                                            "base": 20,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 3,
-                                            "scaling": 0
-                                        }
-                                    }
+                                    "template": "Phys/Mag Def -20%",
+                                    "params": {}
                                 }
                             ],
                             "description": "planner.skills.earths_wake.description",
@@ -4178,30 +4555,21 @@
                             "number": 11,
                             "name": "planner.skills.elemental_dash.name",
                             "baseCooldown": 15,
-                            "baseManaCost": 85,
+                            "baseManaCost": 123,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "CD {cd}s",
-                                    "params": {
-                                        "cd": {
-                                            "base": 0,
-                                            "scaling": -0.2
-                                        }
-                                    }
+                                    "template": "Various Elemental Buffs",
+                                    "params": {}
                                 },
                                 {
-                                    "template": "planner.effects.slow",
+                                    "template": "CD -{cd_s}s",
                                     "params": {
-                                        "amount": {
-                                            "base": 40,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 2,
-                                            "scaling": 0
+                                        "cd_s": {
+                                            "base": 0,
+                                            "scaling": 0.2
                                         }
                                     }
                                 }
@@ -4231,7 +4599,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 100,
@@ -4240,7 +4608,8 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.knockdown"
+                                    "template": "Knockdown",
+                                    "params": {}
                                 }
                             ],
                             "description": "planner.skills.maw_of_hell.description",
@@ -4257,13 +4626,17 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 150,
                                             "scaling": 16
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Burn 0.5% Max HP/s",
+                                    "params": {}
                                 }
                             ],
                             "description": "planner.skills.grave_legion.description",
@@ -4273,20 +4646,24 @@
                             "id": "necro_herd",
                             "number": 6,
                             "name": "planner.skills.necro_herd.name",
-                            "baseCooldown": 13,
+                            "baseCooldown": 15,
                             "baseManaCost": 83,
                             "maxLevel": 25,
                             "upgradeCostType": "Common",
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 160,
                                             "scaling": 15
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Burn 10% & Root 1.5s",
+                                    "params": {}
                                 }
                             ],
                             "description": "planner.skills.necro_herd.description",
@@ -4303,7 +4680,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 50,
@@ -4312,17 +4689,8 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.slow",
-                                    "params": {
-                                        "amount": {
-                                            "base": 30,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 2,
-                                            "scaling": 0
-                                        }
-                                    }
+                                    "template": "Slow -30% & Mag Def -10% (+0.5%)",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
@@ -4339,7 +4707,7 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 150,
@@ -4348,17 +4716,8 @@
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.slow",
-                                    "params": {
-                                        "amount": {
-                                            "base": 50,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 2,
-                                            "scaling": 0
-                                        }
-                                    }
+                                    "template": "Slow 50%",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
@@ -4375,13 +4734,17 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 100,
                                             "scaling": 7
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Bleed 1.5% Max HP/s",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
@@ -4417,11 +4780,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "CD {cd}s",
+                                    "template": "Heal allies {heal}% HP/s",
                                     "params": {
-                                        "cd": {
+                                        "heal": {
+                                            "base": 16,
+                                            "scaling": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "CD -{cd_s}s",
+                                    "params": {
+                                        "cd_s": {
                                             "base": 0,
-                                            "scaling": -0.4
+                                            "scaling": 0.4
                                         }
                                     }
                                 }
@@ -4440,11 +4812,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 120,
                                             "scaling": 5
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Heal allies/self {heal}% HP",
+                                    "params": {
+                                        "heal": {
+                                            "base": 50,
+                                            "scaling": 2
                                         }
                                     }
                                 }
@@ -4463,11 +4844,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 100,
                                             "scaling": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Heal allies/self {heal}%/s",
+                                    "params": {
+                                        "heal": {
+                                            "base": 30,
+                                            "scaling": 0.5
                                         }
                                     }
                                 }
@@ -4486,13 +4876,26 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 100,
                                             "scaling": 1
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Heal allies {heal}%",
+                                    "params": {
+                                        "heal": {
+                                            "base": 35,
+                                            "scaling": 0.4
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Crit Chance +15%",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
@@ -4509,10 +4912,10 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "planner.effects.heal",
+                                    "template": "Heal allies/self {heal}%",
                                     "params": {
-                                        "amount": {
-                                            "base": 1,
+                                        "heal": {
+                                            "base": 50,
                                             "scaling": 1
                                         }
                                     }
@@ -4532,13 +4935,26 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "planner.effects.stun_duration_lvl",
+                                    "template": "{dmg}% True DMG",
                                     "params": {
-                                        "duration": {
-                                            "base": 1.5,
-                                            "scaling": 0.1
+                                        "dmg": {
+                                            "base": 75,
+                                            "scaling": 5
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Heal allies {heal}%",
+                                    "params": {
+                                        "heal": {
+                                            "base": 75,
+                                            "scaling": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Slow 50% & Stun 1.5s",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
@@ -4566,11 +4982,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 100,
                                             "scaling": 5
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Heal allies {heal}%",
+                                    "params": {
+                                        "heal": {
+                                            "base": 30,
+                                            "scaling": 1
                                         }
                                     }
                                 }
@@ -4589,11 +5014,20 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "{dmg}% Magic DMG",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
                                         "dmg": {
                                             "base": 70,
                                             "scaling": 3
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Heal allies/self {heal}%",
+                                    "params": {
+                                        "heal": {
+                                            "base": 35,
+                                            "scaling": 0.5
                                         }
                                     }
                                 }
@@ -4612,11 +5046,29 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "80% Magic DMG | CD {cd}s",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
-                                        "cd": {
+                                        "dmg": {
+                                            "base": 80,
+                                            "scaling": 4
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "Heal allies {heal}%",
+                                    "params": {
+                                        "heal": {
+                                            "base": 50,
+                                            "scaling": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "template": "CD -{cd_s}s",
+                                    "params": {
+                                        "cd_s": {
                                             "base": 0,
-                                            "scaling": -0.2
+                                            "scaling": 0.2
                                         }
                                     }
                                 }
@@ -4635,10 +5087,10 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "planner.effects.shield",
+                                    "template": "Shield {pct}%",
                                     "params": {
-                                        "amount": {
-                                            "base": 0,
+                                        "pct": {
+                                            "base": 100,
                                             "scaling": 4
                                         }
                                     }
@@ -4658,30 +5110,30 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "planner.effects.shield_lvl",
+                                    "template": "{dmg}% Mag DMG",
                                     "params": {
-                                        "amount": {
-                                            "base": 70,
-                                            "scaling": 0
-                                        },
-                                        "scaling": {
-                                            "base": 4,
-                                            "scaling": 0
+                                        "dmg": {
+                                            "base": 100,
+                                            "scaling": 4
                                         }
                                     }
                                 },
                                 {
-                                    "template": "planner.effects.slow",
+                                    "template": "Shield {pct}%",
                                     "params": {
-                                        "amount": {
-                                            "base": 30,
-                                            "scaling": 0
-                                        },
-                                        "duration": {
-                                            "base": 2,
-                                            "scaling": 0
+                                        "pct": {
+                                            "base": 70,
+                                            "scaling": 1
                                         }
                                     }
+                                },
+                                {
+                                    "template": "Slow -30% (Enemies)",
+                                    "params": {}
+                                },
+                                {
+                                    "template": "Move Speed +30% (Allies)",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
@@ -4698,13 +5150,21 @@
                             "upgradeCostAmount": 1,
                             "effects": [
                                 {
-                                    "template": "Heal {heal}%",
+                                    "template": "Heal allies {heal}%/s",
                                     "params": {
                                         "heal": {
                                             "base": 30,
                                             "scaling": 0.5
                                         }
                                     }
+                                },
+                                {
+                                    "template": "HP Regen +300%",
+                                    "params": {}
+                                },
+                                {
+                                    "template": "Move Speed +30%",
+                                    "params": {}
                                 }
                             ],
                             "description": "",
