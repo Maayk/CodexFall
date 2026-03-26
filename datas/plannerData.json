@@ -1,4 +1,8 @@
 {
+    "meta": {
+        "version": "1.6.5",
+        "gameDataVersion": 22503528
+    },
     "config": {
         "itemTypeClassification": {
             "weaponTypes": [
