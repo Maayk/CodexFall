@@ -1,0 +1,25 @@
+{
+  "updateIntervalMs": 30000,
+  "regions": {
+    "BR": [
+      { "id": "m4rolaa", "name": "M4rola" },
+      { "id": "namoratow", "name": "Namorato" },
+      { "id": "m4gnno", "name": "M4gno" },
+      { "id": "danterk_", "name": "Dante" },
+      { "id": "jennifervalent", "name": "Jennifer Valent" },
+      { "id": "buttotv", "name": "Butto TV" }
+    ],
+    "PT": [],
+    "ES": [],
+    "US": [
+      { "id": "thePINKsters", "name": "thePINKsters" }
+    ],
+    "RU": [],
+    "DE": [],
+    "TR": [
+      { "id": "Aytac_Abi", "name": "Aytac_Abi" }
+    ],
+    "FR": [],
+    "default": []
+  }
+}
