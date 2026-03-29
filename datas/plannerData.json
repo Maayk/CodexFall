@@ -1201,7 +1201,8 @@
                                 }
                             ],
                             "description": "planner.skills.reckoning.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Chastise.png"
                         },
                         {
                             "id": "ricochet_shield",
@@ -1233,7 +1234,8 @@
                                 }
                             ],
                             "description": "planner.skills.ricochet_shield.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Ricochet_Shield.png"
                         },
                         {
                             "id": "relentless_charge",
@@ -1265,7 +1267,8 @@
                                 }
                             ],
                             "description": "planner.skills.relentless_charge.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Relentless_Charge.png"
                         },
                         {
                             "id": "rampart",
@@ -1288,7 +1291,8 @@
                                 }
                             ],
                             "description": "planner.skills.rampart.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Rampart.png"
                         },
                         {
                             "id": "rallying_cry",
@@ -1311,7 +1315,8 @@
                                 }
                             ],
                             "description": "planner.skills.rallying_cry.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Rallying_Cry.png"
                         },
                         {
                             "id": "unending_vow",
@@ -1334,7 +1339,8 @@
                                 }
                             ],
                             "description": "planner.skills.unending_vow.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Unending_Vow.png"
                         }
                     ]
                 },
@@ -1377,7 +1383,8 @@
                                 }
                             ],
                             "description": "planner.skills.shield_bash.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Shield_Bash.png"
                         },
                         {
                             "id": "heroic_drop",
@@ -1422,7 +1429,8 @@
                                 }
                             ],
                             "description": "planner.skills.heroic_drop.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Heroic_Drop.png"
                         },
                         {
                             "id": "dread_chain",
@@ -1471,7 +1479,8 @@
                                 }
                             ],
                             "description": "planner.skills.dread_chain.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Dread_Chain.png"
                         },
                         {
                             "id": "valiant_slash",
@@ -1494,7 +1503,8 @@
                                 }
                             ],
                             "description": "planner.skills.valiant_slash.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Valiant_Slash.png"
                         },
                         {
                             "id": "solidarity",
@@ -1517,7 +1527,8 @@
                                 }
                             ],
                             "description": "planner.skills.solidarity.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Solidarity.png"
                         },
                         {
                             "id": "break_the_line",
@@ -1549,7 +1560,8 @@
                                 }
                             ],
                             "description": "planner.skills.break_the_line.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Break_the_Line.png"
                         }
                     ]
                 }
@@ -1591,7 +1603,8 @@
                                 }
                             ],
                             "description": "planner.skills.cyclone_slash.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Cyclone_Slash.png"
                         },
                         {
                             "id": "doomfall",
@@ -1627,7 +1640,8 @@
                                 }
                             ],
                             "description": "planner.skills.doomfall.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Doomfall.png"
                         },
                         {
                             "id": "hellbringer",
@@ -1653,7 +1667,8 @@
                                 }
                             ],
                             "description": "planner.skills.hellbringer.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Hellbringer.png"
                         },
                         {
                             "id": "frenzy",
@@ -1689,7 +1704,8 @@
                                 }
                             ],
                             "description": "planner.skills.frenzy.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Frenzy.png"
                         },
                         {
                             "id": "fury_impact",
@@ -1725,7 +1741,8 @@
                                 }
                             ],
                             "description": "planner.skills.fury_impact.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Fury_Impact.png"
                         },
                         {
                             "id": "last_stand",
@@ -1763,7 +1780,8 @@
                                 }
                             ],
                             "description": "planner.skills.last_stand.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Last_Stand.png"
                         }
                     ]
                 },
@@ -1797,7 +1815,8 @@
                                 }
                             ],
                             "description": "planner.skills.razor_echo.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Razor_Echo.png"
                         },
                         {
                             "id": "sword_dance",
@@ -1820,7 +1839,8 @@
                                 }
                             ],
                             "description": "planner.skills.sword_dance.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Sword_Dance.png"
                         },
                         {
                             "id": "retaliation",
@@ -1843,7 +1863,8 @@
                                 }
                             ],
                             "description": "planner.skills.retaliation.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Retaliation.png"
                         },
                         {
                             "id": "light_burst",
@@ -1875,7 +1896,8 @@
                                 }
                             ],
                             "description": "planner.skills.light_burst.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Light_Burst.png"
                         },
                         {
                             "id": "brave_dash",
@@ -1907,7 +1929,8 @@
                                 }
                             ],
                             "description": "planner.skills.brave_dash.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Brave_Dash.png"
                         },
                         {
                             "id": "final_verdict",
@@ -1942,7 +1965,8 @@
                                 }
                             ],
                             "description": "planner.skills.final_verdict.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Final_Verdict.png"
                         }
                     ]
                 }
@@ -2010,7 +2034,8 @@
                                 }
                             ],
                             "description": "planner.skills.rule.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Reign.png"
                         },
                         {
                             "id": "spearfall",
@@ -2055,7 +2080,8 @@
                                 }
                             ],
                             "description": "planner.skills.spearfall.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Spear_Drop.png"
                         },
                         {
                             "id": "mirage",
@@ -2090,7 +2116,8 @@
                                 }
                             ],
                             "description": "planner.skills.mirage.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Mirage.png"
                         },
                         {
                             "id": "aerial_onslaught",
@@ -2122,7 +2149,8 @@
                                 }
                             ],
                             "description": "planner.skills.aerial_onslaught.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Aerial_Assault.png"
                         },
                         {
                             "id": "face_off",
@@ -2154,7 +2182,8 @@
                                 }
                             ],
                             "description": "planner.skills.face_off.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Face-Off.png"
                         },
                         {
                             "id": "dragons_fury",
@@ -2195,7 +2224,8 @@
                                 }
                             ],
                             "description": "planner.skills.dragons_fury.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Dragons_Fury.png"
                         }
                     ]
                 },
@@ -2246,7 +2276,8 @@
                                 }
                             ],
                             "description": "planner.skills.spear_shot.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Spear_Throw.png"
                         },
                         {
                             "id": "no_quarter",
@@ -2285,7 +2316,8 @@
                                 }
                             ],
                             "description": "planner.skills.no_quarter.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "No_Quarter.png"
                         },
                         {
                             "id": "ruthless_dive",
@@ -2312,7 +2344,8 @@
                                 }
                             ],
                             "description": "planner.skills.ruthless_dive.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Ruthless_Dive.png"
                         },
                         {
                             "id": "supreme_force",
@@ -2339,7 +2372,8 @@
                                 }
                             ],
                             "description": "planner.skills.supreme_force.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Supreme_Force.png"
                         },
                         {
                             "id": "lance_cyclone",
@@ -2395,7 +2429,8 @@
                                 }
                             ],
                             "description": "planner.skills.lance_cyclone.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Lance_Cyclone.png"
                         },
                         {
                             "id": "pollice_verso",
@@ -2427,7 +2462,8 @@
                                 }
                             ],
                             "description": "planner.skills.pollice_verso.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Pollice_Verso.png"
                         }
                     ]
                 }
@@ -2495,7 +2531,8 @@
                                 }
                             ],
                             "description": "planner.skills.axe_throw.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Axe_Throw.png"
                         },
                         {
                             "id": "berserk",
@@ -2518,7 +2555,8 @@
                                 }
                             ],
                             "description": "planner.skills.berserk.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Berserk.png"
                         },
                         {
                             "id": "slaughter",
@@ -2541,7 +2579,8 @@
                                 }
                             ],
                             "description": "planner.skills.slaughter.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Massacre.png"
                         },
                         {
                             "id": "battle_roar",
@@ -2638,7 +2677,8 @@
                                 }
                             ],
                             "description": "planner.skills.battle_roar.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Battle_Roar.png"
                         },
                         {
                             "id": "rage_burst",
@@ -2661,7 +2701,8 @@
                                 }
                             ],
                             "description": "planner.skills.rage_burst.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Rage_Burst.png"
                         },
                         {
                             "id": "execution",
@@ -2697,7 +2738,8 @@
                                 }
                             ],
                             "description": "planner.skills.execution.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Execution.png"
                         }
                     ]
                 },
@@ -2731,7 +2773,8 @@
                                 }
                             ],
                             "description": "planner.skills.savage_cleave.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Savage_Cleave.png"
                         },
                         {
                             "id": "guillotine",
@@ -2763,7 +2806,8 @@
                                 }
                             ],
                             "description": "planner.skills.guillotine.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Guillotine.png"
                         },
                         {
                             "id": "rift_maker",
@@ -2799,7 +2843,8 @@
                                 }
                             ],
                             "description": "planner.skills.rift_maker.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Rift_Maker.png"
                         },
                         {
                             "id": "deathroll",
@@ -2835,7 +2880,8 @@
                                 }
                             ],
                             "description": "planner.skills.deathroll.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Death_Roll.png"
                         },
                         {
                             "id": "cruel_authority",
@@ -2877,7 +2923,8 @@
                                 }
                             ],
                             "description": "planner.skills.cruel_authority.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Cruel_Authority.png"
                         },
                         {
                             "id": "apocalyptic_might",
@@ -2909,7 +2956,8 @@
                                 }
                             ],
                             "description": "planner.skills.apocalyptic_might.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Apocalyptic_Might.png"
                         }
                     ]
                 }
@@ -2951,7 +2999,8 @@
                                 }
                             ],
                             "description": "planner.skills.ambush.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Ambush.png"
                         },
                         {
                             "id": "razor_spin",
@@ -2974,7 +3023,8 @@
                                 }
                             ],
                             "description": "planner.skills.razor_spin.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Razor_Spin.png"
                         },
                         {
                             "id": "poison_shroud",
@@ -2997,7 +3047,8 @@
                                 }
                             ],
                             "description": "planner.skills.poison_shroud.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Poison_Shroud.png"
                         },
                         {
                             "id": "thousand_cut",
@@ -3020,7 +3071,8 @@
                                 }
                             ],
                             "description": "planner.skills.thousand_cut.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Thousand_Cuts.png"
                         },
                         {
                             "id": "venom_burst",
@@ -3043,7 +3095,8 @@
                                 }
                             ],
                             "description": "planner.skills.venom_burst.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Venom_Burst.png"
                         },
                         {
                             "id": "assassination",
@@ -3066,7 +3119,8 @@
                                 }
                             ],
                             "description": "planner.skills.assassination.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Assassination.png"
                         }
                     ]
                 },
@@ -3100,7 +3154,8 @@
                                 }
                             ],
                             "description": "planner.skills.razor_shuriken.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Razor_Shuriken.png"
                         },
                         {
                             "id": "blindside",
@@ -3143,7 +3198,8 @@
                                 }
                             ],
                             "description": "planner.skills.blindside.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Blindside.png"
                         },
                         {
                             "id": "fade_to_black",
@@ -3170,7 +3226,8 @@
                                 }
                             ],
                             "description": "planner.skills.fade_to_black.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Fade_to_Black.png"
                         },
                         {
                             "id": "death_bloom",
@@ -3193,7 +3250,8 @@
                                 }
                             ],
                             "description": "planner.skills.death_bloom.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Death_Bloom.png"
                         },
                         {
                             "id": "blood_harvest",
@@ -3216,7 +3274,8 @@
                                 }
                             ],
                             "description": "planner.skills.blood_harvest.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Blood_Harvest.png"
                         },
                         {
                             "id": "death_waltz",
@@ -3239,7 +3298,8 @@
                                 }
                             ],
                             "description": "planner.skills.death_waltz.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Death_Waltz.png"
                         }
                     ]
                 }
@@ -3281,7 +3341,8 @@
                                 }
                             ],
                             "description": "planner.skills.stonewall.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Stonewall.png"
                         },
                         {
                             "id": "seismic_charge",
@@ -3304,7 +3365,8 @@
                                 }
                             ],
                             "description": "planner.skills.seismic_charge.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Seismic_Charge.png"
                         },
                         {
                             "id": "iron_will",
@@ -3336,7 +3398,8 @@
                                 }
                             ],
                             "description": "planner.skills.iron_will.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Iron_Will.png"
                         },
                         {
                             "id": "juggernaut",
@@ -3368,7 +3431,8 @@
                                 }
                             ],
                             "description": "planner.skills.juggernaut.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Juggernaut.png"
                         },
                         {
                             "id": "homerun",
@@ -3404,7 +3468,8 @@
                                 }
                             ],
                             "description": "planner.skills.homerun.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Homerun.png"
                         },
                         {
                             "id": "stone_arena",
@@ -3427,7 +3492,8 @@
                                 }
                             ],
                             "description": "planner.skills.stone_arena.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Stone_Arena.png"
                         }
                     ]
                 },
@@ -3474,7 +3540,8 @@
                                 }
                             ],
                             "description": "planner.skills.seismic_dive.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Seismic_Dive.png"
                         },
                         {
                             "id": "judgment",
@@ -3497,7 +3564,8 @@
                                 }
                             ],
                             "description": "planner.skills.judgment.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Judgment.png"
                         },
                         {
                             "id": "steel_vortex",
@@ -3529,7 +3597,8 @@
                                 }
                             ],
                             "description": "planner.skills.steel_vortex.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Steel_Vortex.png"
                         },
                         {
                             "id": "grasp",
@@ -3569,7 +3638,8 @@
                                 }
                             ],
                             "description": "planner.skills.grasp.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Grasp.png"
                         },
                         {
                             "id": "unyielding",
@@ -3601,7 +3671,8 @@
                                 }
                             ],
                             "description": "planner.skills.unyielding.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Unyielding.png"
                         },
                         {
                             "id": "earth_shatter",
@@ -3624,7 +3695,8 @@
                                 }
                             ],
                             "description": "planner.skills.earth_shatter.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "EarthShatter.png"
                         }
                     ]
                 }
@@ -3666,7 +3738,8 @@
                                 }
                             ],
                             "description": "planner.skills.piercing_arrow.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Piercing_Arrow.png"
                         },
                         {
                             "id": "skyfall_shot",
@@ -3689,7 +3762,8 @@
                                 }
                             ],
                             "description": "planner.skills.skyfall_shot.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Skyfall_Shot.png"
                         },
                         {
                             "id": "quick_draw",
@@ -3712,7 +3786,8 @@
                                 }
                             ],
                             "description": "planner.skills.quick_draw.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Quick_Draw.png"
                         },
                         {
                             "id": "evasive_shot",
@@ -3739,7 +3814,8 @@
                                 }
                             ],
                             "description": "planner.skills.evasive_shot.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Evasive_Shot.png"
                         },
                         {
                             "id": "chaining_roots",
@@ -3775,7 +3851,8 @@
                                 }
                             ],
                             "description": "planner.skills.chaining_roots.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Chaining_Roots.png"
                         },
                         {
                             "id": "dragons_wrath",
@@ -3801,7 +3878,8 @@
                                 }
                             ],
                             "description": "planner.skills.dragons_wrath.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Dragons_Wrath.png"
                         }
                     ]
                 },
@@ -3848,7 +3926,8 @@
                                 }
                             ],
                             "description": "planner.skills.dual_barrage.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Dual_Barrage.png"
                         },
                         {
                             "id": "breakaway",
@@ -3871,7 +3950,8 @@
                                 }
                             ],
                             "description": "planner.skills.breakaway.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Breakaway.png"
                         },
                         {
                             "id": "skyshot",
@@ -3894,7 +3974,8 @@
                                 }
                             ],
                             "description": "planner.skills.skyshot.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Skyshot.png"
                         },
                         {
                             "id": "arsenal",
@@ -3917,7 +3998,8 @@
                                 }
                             ],
                             "description": "planner.skills.arsenal.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Arsenal.png"
                         },
                         {
                             "id": "singularity_shot",
@@ -3956,7 +4038,8 @@
                                 }
                             ],
                             "description": "planner.skills.singularity_shot.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Singularity_Shot.png"
                         },
                         {
                             "id": "arrow_rain",
@@ -3992,7 +4075,8 @@
                                 }
                             ],
                             "description": "planner.skills.arrow_rain.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Arrow_Rain.png"
                         }
                     ]
                 }
@@ -4052,7 +4136,8 @@
                                 }
                             ],
                             "description": "planner.skills.overkill.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Overkill.png"
                         },
                         {
                             "id": "multi_shot",
@@ -4084,7 +4169,8 @@
                                 }
                             ],
                             "description": "planner.skills.multi_shot.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Multi_Shot.png"
                         },
                         {
                             "id": "quick_step",
@@ -4116,7 +4202,8 @@
                                 }
                             ],
                             "description": "planner.skills.quick_step.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Quick_Step.png"
                         },
                         {
                             "id": "bolt_hail",
@@ -4157,7 +4244,8 @@
                                 }
                             ],
                             "description": "planner.skills.bolt_hail.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Bolt_Hail.png"
                         },
                         {
                             "id": "cleanse",
@@ -4189,7 +4277,8 @@
                                 }
                             ],
                             "description": "planner.skills.cleanse.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Cleanse.png"
                         },
                         {
                             "id": "doom_barrage",
@@ -4212,7 +4301,8 @@
                                 }
                             ],
                             "description": "planner.skills.doom_barrage.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Doom_Barrage.png"
                         }
                     ]
                 },
@@ -4246,7 +4336,8 @@
                                 }
                             ],
                             "description": "planner.skills.explosive_arrow.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Explosive_Arrow.png"
                         },
                         {
                             "id": "ballista",
@@ -4269,7 +4360,8 @@
                                 }
                             ],
                             "description": "planner.skills.ballista.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Ballista.png"
                         },
                         {
                             "id": "stun_bomb",
@@ -4301,7 +4393,8 @@
                                 }
                             ],
                             "description": "planner.skills.stun_bomb.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Stun_Bomb.png"
                         },
                         {
                             "id": "steel_trap",
@@ -4333,7 +4426,8 @@
                                 }
                             ],
                             "description": "planner.skills.steel_trap.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Steel_Trap.png"
                         },
                         {
                             "id": "prowl_step",
@@ -4365,7 +4459,8 @@
                                 }
                             ],
                             "description": "planner.skills.prowl_step.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Prowl_Step.png"
                         },
                         {
                             "id": "hunt_thrill",
@@ -4397,7 +4492,8 @@
                                 }
                             ],
                             "description": "planner.skills.hunt_thrill.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Hunt_Thrill.png"
                         }
                     ]
                 }
@@ -4448,7 +4544,8 @@
                                 }
                             ],
                             "description": "planner.skills.tornado.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Tornado.png"
                         },
                         {
                             "id": "meteor",
@@ -4475,7 +4572,8 @@
                                 }
                             ],
                             "description": "planner.skills.meteor.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Meteor.png"
                         },
                         {
                             "id": "ice_cage",
@@ -4502,7 +4600,8 @@
                                 }
                             ],
                             "description": "planner.skills.ice_cage.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Ice_Cage.png"
                         },
                         {
                             "id": "thunderstrike",
@@ -4525,7 +4624,8 @@
                                 }
                             ],
                             "description": "planner.skills.thunderstrike.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Thunderstrike.png"
                         },
                         {
                             "id": "earths_wake",
@@ -4552,7 +4652,8 @@
                                 }
                             ],
                             "description": "planner.skills.earths_wake.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Earth_Awake.png"
                         },
                         {
                             "id": "elemental_dash",
@@ -4579,7 +4680,8 @@
                                 }
                             ],
                             "description": "planner.skills.elemental_dash.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Elemental_Dash.png"
                         }
                     ]
                 },
@@ -4617,7 +4719,8 @@
                                 }
                             ],
                             "description": "planner.skills.maw_of_hell.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Maw_of_Hell.png"
                         },
                         {
                             "id": "grave_legion",
@@ -4644,7 +4747,8 @@
                                 }
                             ],
                             "description": "planner.skills.grave_legion.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Grave_Legion.png"
                         },
                         {
                             "id": "necro_herd",
@@ -4671,7 +4775,8 @@
                                 }
                             ],
                             "description": "planner.skills.necro_herd.description",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Necroherd.png"
                         },
                         {
                             "id": "agony_wall",
@@ -4698,7 +4803,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Agony_Wall.png"
                         },
                         {
                             "id": "inferno_trick",
@@ -4725,7 +4831,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Inferno_Trick.png"
                         },
                         {
                             "id": "revenants_vengeance",
@@ -4752,7 +4859,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Revenants_Vengeance.png"
                         }
                     ]
                 }
@@ -4803,7 +4911,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Redemption.png"
                         },
                         {
                             "id": "mana_tide",
@@ -4835,7 +4944,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Mana_Tide.png"
                         },
                         {
                             "id": "soul_beacon",
@@ -4867,7 +4977,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Soul_Beacon.png"
                         },
                         {
                             "id": "soul_cascade",
@@ -4903,7 +5014,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Soul_Cascade.png"
                         },
                         {
                             "id": "realm_shift",
@@ -4926,7 +5038,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Realm_Shift.png"
                         },
                         {
                             "id": "divine_intervention",
@@ -4962,7 +5075,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Divine_Intervention.png"
                         }
                     ]
                 },
@@ -5005,7 +5119,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Divine_Beam.png"
                         },
                         {
                             "id": "dual_surge",
@@ -5037,7 +5152,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Dual_Surge.png"
                         },
                         {
                             "id": "divine_rush",
@@ -5078,7 +5194,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Divine_Rush.png"
                         },
                         {
                             "id": "sacred_instinct",
@@ -5101,7 +5218,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Sacred_Instinct.png"
                         },
                         {
                             "id": "radiant_halo",
@@ -5141,7 +5259,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Radiant_Halo.png"
                         },
                         {
                             "id": "heavenly_blessing",
@@ -5172,7 +5291,8 @@
                                 }
                             ],
                             "description": "",
-                            "hasStoneSlot": true
+                            "hasStoneSlot": true,
+                            "icon": "Heavenly_Blessing.png"
                         }
                     ]
                 }
