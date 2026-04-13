@@ -4,7 +4,7 @@ An informative wiki for exploring items, recipes, and other game content from Qu
 
 ## Live Demo
 
-Visit the live site: [https://maayk.github.io/CodexFall](https://maayk.github.io/CodexFall)
+Visit the live site: [https://codexfall.pages.dev/](https://codexfall.pages.dev/)  [NEW LINK UPDATED]
 
 ## Features
 
